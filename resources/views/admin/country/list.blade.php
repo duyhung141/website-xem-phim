@@ -1,9 +1,9 @@
 @extends('admin.layout')
 @section('main-content')
     <div class="card">
-{{--        <div class="card-header">--}}
-{{--            <h3 class="card-title">Bordered Table</h3>--}}
-{{--        </div>--}}
+        <div class="card-header">
+            <a href="{{route('admin.country.create')}}" class="btn btn-info">Thêm mới</a>
+        </div>
 
         <div class="card-body">
             <table class="table table-bordered">
@@ -54,5 +54,5 @@
 @endsection
 
 @section('title')
-    List country
+    List Country
 @endsection

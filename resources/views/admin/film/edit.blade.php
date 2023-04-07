@@ -36,5 +36,5 @@
 @endsection
 
 @section('title')
-    Edit film
+    Edit Film
 @endsection

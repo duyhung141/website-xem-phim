@@ -36,5 +36,5 @@
 @endsection
 
 @section('title')
-    Edit director
+    Edit Director
 @endsection

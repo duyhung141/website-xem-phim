@@ -35,5 +35,5 @@
 @endsection
 
 @section('title')
-    Create director
+    Create Director
 @endsection

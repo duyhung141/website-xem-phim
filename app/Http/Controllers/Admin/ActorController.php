@@ -28,11 +28,17 @@ class ActorController extends Controller
         $data = $request->all();
         unset($data['_token']);
         try {
-            Actor::create($data);
+            $actor = Actor::where('name', $request->name)->first();
+            if($actor) return redirect()->back()->with('error', 'Đã có diễn viên này');
+
+            else {
+                Actor::create($data);
+                return redirect()->back()->with('success', 'Thêm mới thành công');
+            }
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', $exception->getMessage());
         }
-        return redirect()->back()->with('success', 'Thêm mới thành công');
+
     }
 
     public function edit($id)

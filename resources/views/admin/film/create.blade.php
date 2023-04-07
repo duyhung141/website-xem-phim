@@ -58,8 +58,8 @@
                     </div>
                     <div>
                         <label for="actor_id">Actor</label>
-                        <select name="actor_id" id="actor_id">
-                            <option value="">None</option>
+                        <select name="actor_id" id="actor_id" class="selectpicker" multiple aria-label="size 3 select example">
+                            <option  value="">None</option>
                             @foreach($actors as $actor)
                                 <option value="{{$actor->id}}">{{$actor->name}}</option>
                             @endforeach
@@ -100,5 +100,5 @@
 @endsection
 
 @section('title')
-    Create film
+    Create Film
 @endsection

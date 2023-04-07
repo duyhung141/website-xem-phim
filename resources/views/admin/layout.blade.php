@@ -16,6 +16,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{asset('adminlte/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('adminlte/dist/css/adminlte.min.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" integrity="sha512-mR/b5Y7FRsKqrYZou7uysnOdCIJib/7r5QeJMFvLNHNhtye3xJp1TdJVPLtetkukFn227nKpXD9OjUc09lx97Q==" crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -198,127 +200,43 @@ scratch. This page gets rid of all links and provides the needed markup only.
                          with font-awesome or any other icon font library -->
                     {{--Dashboard--}}
                     <li class="nav-item ">
-                        <a href="#" class="nav-link active">
+                        <a href="#" class="nav-link">
                             <p>
                                 Dashboard
                             </p>
                         </a>
+                    </li>
 
-                    </li>
                     {{--Actor--}}
-                    <li class="nav-item menu-open">
-                        <a href="" class="nav-link">
-                            <p>
-                                Actor
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
+                    <li class="nav-item">
+                        <a href="{{route('admin.actor.list')}}" class="nav-link">
+                            <p>Actor</p>
                         </a>
-                        <ul class="nav nav-treeview " style="display: none">
-                            <li class="nav-item">
-                                <a href="{{route('admin.actor.list')}}" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>List</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('admin.actor.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Create</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
+
                     {{--Category--}}
-                    <li class="nav-item menu-open">
-                        <a href="" class="nav-link">
-                            <p>
-                                Category
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
+                    <li class="nav-item">
+                        <a href="{{route('admin.category.list')}}" class="nav-link">
+                            <p>Category</p>
                         </a>
-                        <ul class="nav nav-treeview" style="display: none">
-                            <li class="nav-item">
-                                <a href="{{route('admin.category.list')}}" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>List</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('admin.category.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Create</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     {{--Country--}}
-                    <li class="nav-item menu-open">
-                        <a href="" class="nav-link">
-                            <p>
-                                Country
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
+                    <li class="nav-item">
+                        <a href="{{route('admin.country.list')}}" class="nav-link">
+                            <p>Country</p>
                         </a>
-                        <ul class="nav nav-treeview" style="display: none">
-                            <li class="nav-item">
-                                <a href="{{route('admin.country.list')}}" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>List</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('admin.country.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Create</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     {{--User--}}
-                    <li class="nav-item menu-open">
-                        <a href="" class="nav-link">
-                            <p>
-                                User
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
+                    <li class="nav-item">
+                        <a href="{{route('admin.user.list')}}" class="nav-link ">
+                            <p>User</p>
                         </a>
-                        <ul class="nav nav-treeview" style="display: none">
-                            <li class="nav-item">
-                                <a href="{{route('admin.user.list')}}" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>List</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('admin.user.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Create</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     {{--Film--}}
-                    <li class="nav-item menu-open">
-                        <a href="" class="nav-link">
-                            <p>
-                                Film
-                                <i class="right fas fa-angle-left"></i>
-                            </p>
+                    <li class="nav-item">
+                        <a href="{{route('admin.film.list')}}" class="nav-link ">
+                            <p>Film</p>
                         </a>
-                        <ul class="nav nav-treeview" style="display: none">
-                            <li class="nav-item">
-                                <a href="{{route('admin.film.list')}}" class="nav-link active">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>List</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{route('admin.film.create')}}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Create</p>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -410,5 +328,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="{{asset('adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('adminlte/dist/js/adminlte.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js" integrity="sha512-FHZVRMUW9FsXobt+ONiix6Z0tIkxvQfxtCSirkKc5Sb4TKHmqq1dZa8DphF0XqKb3ldLu/wgMa8mT6uXiLlRlw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>

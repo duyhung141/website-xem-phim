@@ -28,11 +28,16 @@ class CategoryController extends Controller
         $data = $request->all();
         unset($data['_token']);
         try {
-            Category::create($data);
+            $category = Category::where('name', $request->name)->first();
+            if($category) return redirect()->back()->with('error', 'Đã có danh mục này');
+
+            else {
+                Category::create($data);
+                return redirect()->back()->with('success', 'Thêm mới thành công');
+            }
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', $exception->getMessage());
         }
-        return redirect()->back()->with('success', 'Thêm mới thành công');
     }
 
     public function edit($id)

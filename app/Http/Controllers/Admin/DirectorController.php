@@ -28,11 +28,18 @@ class DirectorController extends Controller
         $data = $request->all();
         unset($data['_token']);
         try {
-            Director::create($data);
+            $director = Director::where('name', $request->name)->first();
+            if($director) return redirect()->back()->with('error', 'Đã có danh mục này');
+
+            else {
+                Director::create($data);
+                return redirect()->back()->with('success', 'Thêm mới thành công');
+            }        } catch (\Exception $exception) {
+            return redirect()->back()->with('error', $exception->getMessage());
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', $exception->getMessage());
         }
-        return redirect()->back()->with('success', 'Thêm mới thành công');
+
     }
 
     public function edit($id)

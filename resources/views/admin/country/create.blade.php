@@ -35,5 +35,5 @@
 @endsection
 
 @section('title')
-    Create country
+    Create Country
 @endsection

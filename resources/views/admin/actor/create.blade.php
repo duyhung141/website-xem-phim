@@ -35,5 +35,5 @@
 @endsection
 
 @section('title')
-    Create actor
+    Create Actor
 @endsection

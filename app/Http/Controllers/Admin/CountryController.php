@@ -28,11 +28,15 @@ class CountryController extends Controller
         $data = $request->all();
         unset($data['_token']);
         try {
-            Country::create($data);
-        } catch (\Exception $exception) {
+            $country = Country::where('name', $request->name)->first();
+            if($country) return redirect()->back()->with('error', 'Đã có danh mục này');
+
+            else {
+                Country::create($data);
+                return redirect()->back()->with('success', 'Thêm mới thành công');
+            }        } catch (\Exception $exception) {
             return redirect()->back()->with('error', $exception->getMessage());
         }
-        return redirect()->back()->with('success', 'Thêm mới thành công');
     }
 
     public function edit($id)

@@ -36,5 +36,5 @@
 @endsection
 
 @section('title')
-    Edit country
+    Edit Country
 @endsection

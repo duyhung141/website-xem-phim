@@ -36,5 +36,5 @@
 @endsection
 
 @section('title')
-    Edit actor
+    Edit Actor
 @endsection
