@@ -1,3 +1,7 @@
+Lỗi: Paginate
+    Film
+
+
 Trang chủ -> phim hot -> do thằng admin chọn/ phim oscar -> do thằng admin chọn/
 phim nhiều người xem-> lượt xem -> tính lượt xem / phim mới cập nhật -> thời gian upload phim
 

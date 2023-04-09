@@ -11,7 +11,8 @@ class ActorController extends Controller
     public function list()
     {
         // TODO: Implement list() method.
-        $list = Actor::all();
+        $list = Actor::paginate(2);
+
         return view('admin.actor.list', compact('list'));
     }
 
