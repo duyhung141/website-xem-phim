@@ -10,7 +10,15 @@ Route::prefix('/')->group(function(){
     Route::get('/movie-details', function () {
         return view('user.movie-details');
     })->name('user.movieDetails');
+
+    Route::get("/movie-hot",function(){
+        return view("user.movie-hot");
+    })->name("movie-hot");
+    Route::get("/movie-oscar",function(){
+        return view("user.movie-oscar");
+    })->name("movie-oscar");
 });
+
 
 
 

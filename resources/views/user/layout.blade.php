@@ -326,6 +326,10 @@
 
 
 <!-- main-area -->
+@section('oscar-content')
+@show
+@section('hot-content')
+@show
 @section('main-content')
 @show
 <!-- main-area-end -->

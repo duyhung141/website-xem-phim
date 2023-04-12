@@ -2949,5 +2949,14 @@ label {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+.movie-history-wrap{
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
 
-
+.card #comment-tab{
+    background-color: white;
+}
+ul .category{
+    display: block !important;
+}
