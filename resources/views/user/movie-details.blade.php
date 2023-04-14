@@ -24,8 +24,14 @@
                                         <span>hd</span>
                                     </li>
                                     <li class="category">
-                                        <a href="#">Romance,</a>
-                                        <a href="#">Drama</a>
+                                        <a href="#">Quốc gia: Romance,</a><br>
+                                        <a href="#">Thể loại: Drama</a><br>
+                                        <a href ="#">Diễn Viên: Shin Hyun Soo, Im Se Mi, Kim Ki Hae, Lee Soon Won, Choi Moon Hee, Kim Su Gyeom</a><br>
+                                       <a href = "#">Tình trạng: Phim đang chiếu</a> <br>
+                                       <a href = "#">Ngôn ngữ: Phụ đề Việt</a><br>
+                                       <a href = "#"> Năm sản xuất: 2023</a>
+
+
                                     </li>
                                     <li class="release-time">
                                         <span><i class="far fa-calendar-alt"></i> 2021</span>
@@ -51,10 +57,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="movie-details-btn">
-                        <a href="{{asset('img/poster/movie_details_img.jpg" class="download-btn')}}" download="">Download <img
-                                src="fonts/download.svg" alt=""></a>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -63,113 +66,11 @@
         <!-- episode-area -->
         <section class="episode-area episode-bg" data-background="img/bg/episode_bg.jpg">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="movie-episode-wrap">
-                            <div class="episode-top-wrap">
-                                <div class="section-title">
-                                    <span class="sub-title">ONLINE STREAMING</span>
-                                    <h2 class="title">Watch Full Episode</h2>
-                                </div>
-                                <div class="total-views-count">
-                                    <p>2.7 million <i class="far fa-eye"></i></p>
-                                </div>
-                            </div>
-                            <div class="episode-watch-wrap">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="card">
-                                        <div class="card-header" id="headingOne">
-                                            <button class="btn-block text-left" type="button" data-toggle="collapse"
-                                                    data-target="#collapseOne" aria-expanded="true"
-                                                    aria-controls="collapseOne">
-                                                <span class="season">Season 2</span>
-                                                <span class="video-count">5 Full Episodes</span>
-                                            </button>
-                                        </div>
-                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                             data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 1 -
-                                                            The
-                                                            World Is Purple</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 2 -
-                                                            Meaner Than Evil</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 3 - I
-                                                            Killed a Man Today</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 4 -
-                                                            Cowboys and Dreamers</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 5 -
-                                                            Freight Trains and Monsters</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                            <button class="btn-block text-left collapsed" type="button"
-                                                    data-toggle="collapse" data-target="#collapseTwo"
-                                                    aria-expanded="false"
-                                                    aria-controls="collapseTwo">
-                                                <span class="season">Season 1</span>
-                                                <span class="video-count">5 Full Episodes</span>
-                                            </button>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                             data-parent="#accordionExample">
-                                            <div class="card-body">
-                                                <ul>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 1 -
-                                                            The
-                                                            World Is Purple</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span>
-                                                    </li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 2 -
-                                                            Meaner Than Evil</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 3 - I
-                                                            Killed a Man Today</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span>
-                                                    </li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 4 -
-                                                            Cowboys and Dreamers</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span>
-                                                    </li>
-                                                    <li><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                           class="popup-video"><i class="fas fa-play"></i> Episode 5 -
-                                                            Freight Trains and Monsters</a> <span class="duration"><i
-                                                                class="far fa-clock"></i> 28 Min</span></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="episode-img">
-                            <img src="{{asset('img/images/episode_img.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="movie-history-wrap">
+
+
+                <div class="row" >
+                    <div class="col-12" >
+                        <div class="movie-history-wrap" >
                             <h3 class="title">About <span>History</span></h3>
                             <p>Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many
                                 variations of passages of lorem
@@ -191,6 +92,44 @@
                         </div>
                     </div>
                 </div>
+
+                
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="movie-episode-wrap">
+                            <div class="episode-top-wrap">
+                                <div class="section-title">
+                                    <span class="sub-title">ONLINE STREAMING</span>
+                                    <h2 class="title">Watch Full Episode</h2>
+                                </div>
+                                <div class="total-views-count">
+                                    <p>2.7 million <i class="far fa-eye"></i></p>
+                                </div>
+                            </div>
+                            <div class="episode-watch-wrap">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div id="comment-tab">
+    
+                                            <div class="box-comment" id="tabs-facebook">
+                                             
+                                               <div id="mp-comments" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://link.motphim.vip/phim/hoc-ky-sinh-tu-11100.html" data-numposts="10" data-order-by="reverse_time" data-colorscheme="light" data-width="650" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=711081303025670&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650"><span style="vertical-align: bottom; width: 650px; height: 1447px;"><iframe name="f279765141ca5e" width="650px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://web.facebook.com/v7.0/plugins/comments.php?app_id=711081303025670&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df26cb1935e25698%26domain%3Dmotchill.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fmotchill.tv%252Ff3b72ee23a52d64%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650" style="border: none; visibility: visible; width: 650px; height: 1447px;" class=""></iframe></span></div>					   <script>document.getElementById("mp-comments").dataset.width=$("#mp-comments").parent().width();</script>
+                                            </div>
+                                      
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="episode-img">
+                            <img src="{{asset('img/images/episode_img.jpg')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
         <!-- episode-area-end -->
@@ -300,28 +239,7 @@
         </section>
         <!-- tv-series-area-end -->
 
-        <!-- newsletter-area -->
-        <section class="newsletter-area newsletter-bg" data-background="{{asset('img/bg/newsletter_bg.jpg')}}">
-            <div class="container">
-                <div class="newsletter-inner-wrap">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="newsletter-content">
-                                <h4>Trial Start First 30 Days.</h4>
-                                <p>Enter your email to create or restart your membership.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <form action="#" class="newsletter-form">
-                                <input type="email" required placeholder="Enter your email">
-                                <button class="btn">get started</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- newsletter-area-end -->
+     
 
     </main>
 @endsection
