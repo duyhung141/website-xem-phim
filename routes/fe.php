@@ -8,7 +8,8 @@ Route::prefix('/')->group(function(){
     Route::get('/', function () {
         return view('user.index');
     })->name('user.index');
-    Route::get("layoutLogin",function () {
+
+    Route::get("/layoutLogin",function () {
         return view("user.layoutLogin");
     })->name("layoutLogin");
 
