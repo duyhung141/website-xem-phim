@@ -23,6 +23,9 @@ Route::prefix('/')->group(function(){
     Route::get("/movie-oscar",function(){
         return view("user.movie-oscar");
     })->name("movie-oscar");
+    Route::get("/play-movie",function(){
+        return view("user.layout-play-movie");
+    })->name("play-movie");
 
 });
 
