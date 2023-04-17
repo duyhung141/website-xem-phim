@@ -272,8 +272,8 @@
                                 <ul>
                                     <li class="header-search"><a href="#" data-toggle="modal"
                                                                  data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    <li class="header-btn"><a href="{{route('login')}}" class="btn">Đăng nhập</a></li>
-                                    <li class="header-btn"><a href="{{route("register")}}" class="btn">Đăng ký</a></li>
+                                    <li class="header-btn"><a href="{{route('user.index')}}" class="btn">Đăng Xuất</a></li>
+                                    
                                 </ul>
                             </div>
                         </nav>
@@ -326,13 +326,9 @@
 
 
 <!-- main-area -->
+@section("layout-login")
+@show
 
-@section('oscar-content')
-@show
-@section('hot-content')
-@show
-@section('main-content')
-@show
 <!-- main-area-end -->
 
 <!-- JS here -->
