@@ -18,6 +18,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
 Route::get('restaurant/{id}', function ($id) {
     return response()->json(
         [
@@ -29,7 +30,7 @@ Route::get('restaurant/{id}', function ($id) {
     );
 });
 
-Route::get('restaurants', function () {
+Route::get('admin/user', function () {
     return response()->json(
         [
             [

@@ -41,12 +41,12 @@ class FilmController extends Controller
                 $image->storeAs('image',$image->getClientOriginalName(),'public');
             }
             $data = \request()->all();
-            unset($data['_token']);
             Film::create($data);
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', $exception->getMessage());
         }
         return redirect()->back()->with('success', 'Thêm mới thành công');
+//        return response()->json('success', 'Thêm mới thành công');;
     }
 
     public function edit($id)

@@ -12,7 +12,7 @@
                     <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name">
                 </div>
                 <div class="form-group">
-                    <label for="name">Description</label>
+                    <label for="description">Description</label>
                     <textarea name="description" class="form-control" id="description" cols="30" rows="2"></textarea>
                 </div>
                 <div class="form-group d-grid gap-4">
@@ -39,7 +39,7 @@
                     </div>
                     <div>
                         <label for="category_id">Category</label>
-                        <select name="category_id" id="category_id">
+                        <select name="category_id" id="category_id" class="selectpicker" multiple>
                             <option value="">None</option>
                             @foreach($categories as $category)
                                 <option value="{{$category->id}}">{{$category->name}}</option>
@@ -58,7 +58,7 @@
                     </div>
                     <div>
                         <label for="actor_id">Actor</label>
-                        <select name="actor_id" id="actor_id" class="selectpicker" multiple aria-label="size 3 select example">
+                        <select name="actor_id" id="actor_id" class="selectpicker" multiple>
                             <option  value="">None</option>
                             @foreach($actors as $actor)
                                 <option value="{{$actor->id}}">{{$actor->name}}</option>

@@ -26,10 +26,11 @@
                                     <li class="category">
                                         <a href="#">Quốc gia: Romance,</a><br>
                                         <a href="#">Thể loại: Drama</a><br>
-                                        <a href ="#">Diễn Viên: Shin Hyun Soo, Im Se Mi, Kim Ki Hae, Lee Soon Won, Choi Moon Hee, Kim Su Gyeom</a><br>
-                                       <a href = "#">Tình trạng: Phim đang chiếu</a> <br>
-                                       <a href = "#">Ngôn ngữ: Phụ đề Việt</a><br>
-                                       <a href = "#"> Năm sản xuất: 2023</a>
+                                        <a href="#">Diễn Viên: Shin Hyun Soo, Im Se Mi, Kim Ki Hae, Lee Soon Won, Choi
+                                            Moon Hee, Kim Su Gyeom</a><br>
+                                        <a href="#">Tình trạng: Phim đang chiếu</a> <br>
+                                        <a href="#">Ngôn ngữ: Phụ đề Việt</a><br>
+                                        <a href="#"> Năm sản xuất: 2023</a>
 
 
                                     </li>
@@ -57,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -68,9 +69,9 @@
             <div class="container">
 
 
-                <div class="row" >
-                    <div class="col-12" >
-                        <div class="movie-history-wrap" >
+                <div class="row">
+                    <div class="col-12">
+                        <div class="movie-history-wrap">
                             <h3 class="title">About <span>History</span></h3>
                             <p>Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many
                                 variations of passages of lorem
@@ -93,7 +94,7 @@
                     </div>
                 </div>
 
-                
+
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="movie-episode-wrap">
@@ -110,15 +111,30 @@
                                 <div class="accordion" id="accordionExample">
                                     <div class="card">
                                         <div id="comment-tab">
-    
+
                                             <div class="box-comment" id="tabs-facebook">
-                                             
-                                               <div id="mp-comments" class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://link.motphim.vip/phim/hoc-ky-sinh-tu-11100.html" data-numposts="10" data-order-by="reverse_time" data-colorscheme="light" data-width="650" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=711081303025670&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650"><span style="vertical-align: bottom; width: 650px; height: 1447px;"><iframe name="f279765141ca5e" width="650px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://web.facebook.com/v7.0/plugins/comments.php?app_id=711081303025670&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df26cb1935e25698%26domain%3Dmotchill.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fmotchill.tv%252Ff3b72ee23a52d64%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650" style="border: none; visibility: visible; width: 650px; height: 1447px;" class=""></iframe></span></div>					   <script>document.getElementById("mp-comments").dataset.width=$("#mp-comments").parent().width();</script>
+
+                                                <div id="mp-comments"
+                                                     class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop"
+                                                     data-href="https://link.motphim.vip/phim/hoc-ky-sinh-tu-11100.html"
+                                                     data-numposts="10" data-order-by="reverse_time"
+                                                     data-colorscheme="light" data-width="650" fb-xfbml-state="rendered"
+                                                     fb-iframe-plugin-query="app_id=711081303025670&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650">
+                                                    <span style="vertical-align: bottom; width: 650px; height: 1447px;"><iframe
+                                                            name="f279765141ca5e" width="650px" height="100px"
+                                                            data-testid="fb:comments Facebook Social Plugin"
+                                                            title="fb:comments Facebook Social Plugin" frameborder="0"
+                                                            allowtransparency="true" allowfullscreen="true"
+                                                            scrolling="no" allow="encrypted-media"
+                                                            src="https://web.facebook.com/v7.0/plugins/comments.php?app_id=711081303025670&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df26cb1935e25698%26domain%3Dmotchill.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fmotchill.tv%252Ff3b72ee23a52d64%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650"
+                                                            style="border: none; visibility: visible; width: 650px; height: 1447px;"
+                                                            class=""></iframe></span></div>
+                                                <script>document.getElementById("mp-comments").dataset.width = $("#mp-comments").parent().width();</script>
                                             </div>
-                                      
-                                            </div>
+
+                                        </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -129,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         <!-- episode-area-end -->
@@ -239,7 +255,6 @@
         </section>
         <!-- tv-series-area-end -->
 
-     
 
     </main>
 @endsection

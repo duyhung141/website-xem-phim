@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function(){
     Route::get('/', function () {
-        return view('user.index');
+        $categories = \App\Models\Category::all();
+        $countries = \App\Models\Country::all();
+        return view('user.index',compact('categories','countries'));
     })->name('user.index');
 
     Route::get('/movie-details', function () {

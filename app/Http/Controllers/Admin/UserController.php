@@ -5,12 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
     public function list(){
         $list = User::all();
-        return view('admin.user.list',compact('list'));
+//        return view('admin.user.list',compact('list'));
+        return response()->json($list);
     }
 
     public function create()
@@ -23,6 +25,7 @@ class UserController extends Controller
     {
         // TODO: Implement doAdd() method.
         $data = $request->all();
+//        Sẽ phải bỏ unset token
         unset($data['_token']);
         $data['password'] = Hash::make($data['password']);
         try {
