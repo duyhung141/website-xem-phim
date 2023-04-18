@@ -257,16 +257,9 @@
                             <div class="header-action d-none d-md-block">
                                 <ul>
                                     <li class="header-search"><a href="#" data-toggle="modal"
-<<<<<<< HEAD
-                                                                 data-target="#search-modal"><i
-                                                class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    <li class="header-btn"><a href="#" class="btn">Đăng nhập</a></li>
-                                    <li class="header-btn"><a href="#" class="btn">Đăng ký</a></li>
-=======
                                                                  data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                                     <li class="header-btn"><a href="{{route('login')}}" class="btn">Đăng nhập</a></li>
                                     <li class="header-btn"><a href="{{route("register")}}" class="btn">Đăng ký</a></li>
->>>>>>> origin/vietanh
                                 </ul>
                             </div>
                         </nav>
