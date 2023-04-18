@@ -238,35 +238,42 @@
                                     </li>
                                     <li><a href="">Thể loại</a>
                                         <ul class="submenu">
-                                            @foreach ($categories as $category)
-                                                <li><a href="">{{$category->name}}</a></li>
-                                            @endforeach
+                                            <li><a href="">Phim hình sự</a></li>
+                                            <li><a href="">Phim tình cảm</a></li>
+                                            <li><a href="">Phim hình sự</a></li>
+                                            <li><a href="">Phim tình cảm</a></li>
+                                            <li><a href="">Phim hình sự</a></li>
+                                            <li><a href="">Phim tình cảm</a></li>
+                                            <li><a href="">Phim hình sự</a></li>
+                                            <li><a href="">Phim tình cảm</a></li>
+                                            <li><a href="">Phim hình sự</a></li>
+                                            <li><a href="">Phim tình cảm</a></li>
+                                            <li><a href="">Phim hình sự</a></li>
+                                            <li><a href="">Phim tình cảm</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="">Quốc gia</a>
                                         <ul class="submenu">
-                                            @foreach ($countries as $country)
-                                                <li><a href="">{{$country->name}}</a></li>
-                                            @endforeach
+                                            <li><a href="">Phim Mỹ</a></li>
+                                            <li><a href="">Phim Hàn Quốc</a></li>
+                                            <li><a href="">Phim Việt Nam</a></li>
+                                            <li><a href="">Phim Nhật Bản</a></li>
+                                            <li><a href="">Phim Trung Quốc</a></li>
+                                            <li><a href="">Phim Thái Lan</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children"><a href="#">Phim mới</a></li>
-                                    <li><a href="">Phim lẻ</a></li>
+                                    <li><a href="contact.html">Phim bộ</a></li>
+                                    <li><a href="contact.html">Phim lẻ</a></li>
                                 </ul>
                             </div>
                             <div class="header-action d-none d-md-block">
                                 <ul>
                                     <li class="header-search"><a href="#" data-toggle="modal"
-<<<<<<< HEAD
-                                                                 data-target="#search-modal"><i
-                                                class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    <li class="header-btn"><a href="#" class="btn">Đăng nhập</a></li>
-                                    <li class="header-btn"><a href="#" class="btn">Đăng ký</a></li>
-=======
                                                                  data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    <li class="header-btn"><a href="{{route('login')}}" class="btn">Đăng nhập</a></li>
-                                    <li class="header-btn"><a href="{{route("register")}}" class="btn">Đăng ký</a></li>
->>>>>>> origin/vietanh
+                                    <li class="header-btn"><a href="{{route('user.index')}}" class="btn">Đăng Xuất</a></li>
+                                    
                                 </ul>
                             </div>
                         </nav>
@@ -282,6 +289,15 @@
                             </div>
                             <div class="menu-outer">
                                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                            </div>
+                            <div class="social-links">
+                                <ul class="clearfix">
+                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
+                                </ul>
                             </div>
                         </nav>
                     </div>
@@ -310,13 +326,9 @@
 
 
 <!-- main-area -->
+@section("layout-login")
+@show
 
-@section('oscar-content')
-@show
-@section('hot-content')
-@show
-@section('main-content')
-@show
 <!-- main-area-end -->
 
 <!-- JS here -->

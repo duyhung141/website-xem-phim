@@ -2,12 +2,18 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 Route::prefix('/')->group(function(){
     Route::get('/', function () {
         $categories = \App\Models\Category::all();
         $countries = \App\Models\Country::all();
         return view('user.index',compact('categories','countries'));
     })->name('user.index');
+
+    Route::get("/layoutLogin",function () {
+        return view("user.layoutLogin");
+    })->name("layoutLogin");
 
     Route::get('/movie-details', function () {
         return view('user.movie-details');
@@ -19,6 +25,10 @@ Route::prefix('/')->group(function(){
     Route::get("/movie-oscar",function(){
         return view("user.movie-oscar");
     })->name("movie-oscar");
+    Route::get("/play-movie",function(){
+        return view("user.layout-play-movie");
+    })->name("play-movie");
+
 });
 
 
