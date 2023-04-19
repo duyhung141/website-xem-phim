@@ -1,5 +1,6 @@
 @extends('user.layout')
 @section('main-content')
+
     <main>
 
         <!-- movie-details-area -->
@@ -50,9 +51,7 @@
                                         <h6>Prime Video</h6>
                                         <span>Streaming Channels</span>
                                     </li>
-                                    <li class="watch"><a href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
-                                                         class="btn popup-video"><i class="fas fa-play"></i> Watch
-                                            Now</a>
+                                    <li class="watch"> <button style = "border:none;padding:10px 34px; background-color:#e4d804; border-radius:50px;   "><a href="{{route('play-movie')}}" style="color:#fff;font-size:14px;"> Watch Now</a></button>
                                     </li>
                                 </ul>
                             </div>
@@ -254,6 +253,7 @@
             </div>
         </section>
         <!-- tv-series-area-end -->
+        
 
 
     </main>

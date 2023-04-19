@@ -1,4 +1,5 @@
 @extends('user.layout')
+
 @section('main-content')
     <main>
         <!-- up-coming-movie-area -->

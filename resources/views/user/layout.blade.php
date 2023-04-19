@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -296,8 +297,21 @@
 
                 </div>
             </div>
+            <nav aria-label="breadcrumb">
+                <?php
+                if(!Request::is("/")){?>
+                <ol class="breadcrumb" style = "background:none">
+                  <li class="breadcrumb-item"><a href="{{route("user.index")}}">Trang chủ</a></li>
+                  <li class="breadcrumb-item"><a href="#">Phim gì đó</a></li>
+                  <li class="breadcrumb-item"><a href="#">Tên phim gì đó</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Tập full</li>
+                </ol>
+                <?php }?>
+              </nav>
         </div>
+        
     </div>
+    
 </header>
 <!-- header-area-end -->
 
