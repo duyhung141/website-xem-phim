@@ -20,8 +20,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::get("/register","Auth\RegisteredUserController@showRegisterForm")->name('register');
+Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class,'showLoginForm'])->name('login');
+Route::get("/register",[\App\Http\Controllers\Auth\LoginController::class,'showRegisterForm'])->name('register');
 
 require __DIR__.'/auth.php';
 require_once __DIR__ . '/fe.php';

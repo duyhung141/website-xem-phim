@@ -1,5 +1,12 @@
-Lỗi: Paginate
-    Film
+Lỗi:    Paginate
+        Storage
+        Login
+        Register
+        Admin
+        FilmActor
+Chưa xong:  breadcumb
+            comments
+            views
 
 
 Trang chủ -> phim hot -> do thằng admin chọn/ phim oscar -> do thằng admin chọn/

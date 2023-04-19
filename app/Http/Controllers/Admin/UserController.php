@@ -6,18 +6,14 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-<<<<<<< HEAD
-=======
 
 
->>>>>>> origin/vietanh
 
 class UserController extends Controller
 {
     public function list(){
         $list = User::all();
-//        return view('admin.user.list',compact('list'));
-        return response()->json($list);
+        return view('admin.user.list',compact('list'));
     }
 
     public function create()

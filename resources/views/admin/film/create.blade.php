@@ -70,11 +70,11 @@
 
                 <div class="form-check d-flex align-items-center">
                     <div class="pr-4">
-                        <input class="p-4 form-check-input" type="checkbox">
+                        <input type="radio" value="1" class="p-4 form-check-input" type="checkbox">
                         <label class="form-check-label" for="actor_id">Is Hot</label>
                     </div>
                     <div class="pl-4">
-                        <input class="p-4 form-check-input" type="checkbox">
+                        <input type="radio" value="1" class="p-4 form-check-input" type="checkbox">
                         <label class="form-check-label" for="actor_id">Is Oscar</label>
                     </div>
                 </div>

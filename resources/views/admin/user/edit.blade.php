@@ -24,6 +24,10 @@
                     <label for="password">Password</label>
                     <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                 </div>
+                <div class="form-group">
+                    <label for="is_admin">Is Admin</label>
+                    <input type="radio" name="is_admin" id="is_admin" value="1">
+                </div>
             </div>
 
             <div class="card-footer">

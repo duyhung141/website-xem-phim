@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     use AuthenticatesUsers;
 
-    protected $redirectTo = '/home';
+    protected $redirectTo = 'http://127.0.0.1:8000/';
 
     public function __construct()
     {
@@ -20,7 +20,7 @@ class LoginController extends Controller
     // Đăng nhập thành công sẽ chuyển hướng về đường dẫn mong muốn
     protected function redirectTo()
     {
-        return '/layoutLogin';
+        return '/';
     }
 
     // Phương thức xử lý đăng nhập
@@ -34,7 +34,7 @@ class LoginController extends Controller
         // Kiểm tra thông tin đăng nhập hợp lệ
         if (auth()->attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
             // Nếu đăng nhập thành công, chuyển hướng về trang phim
-            return redirect()->route('layoutLogin');
+            return redirect()->route('/');
         } else {
             // Nếu đăng nhập thất bại, chuyển hướng về đăng nhập và hiển thị thông báo lỗi
             return redirect()->back()->withInput()->withErrors([
@@ -48,6 +48,6 @@ class LoginController extends Controller
     {
         auth()->logout(); // Đăng xuất người dùng
         $request->session()->invalidate(); // Xóa session
-        return redirect('/login'); // Chuyển hướng về trang đăng nhập
+        return redirect(route('user.index')); // Chuyển hướng về trang đăng nhập
     }
 }

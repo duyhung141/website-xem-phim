@@ -48,8 +48,8 @@
                 @endif
 
                 <x-button class="ml-3">
-                    <a href = "{{route('layoutLogin')}}">Login</a>
-                    
+                    <a href = "{{route('user.index')}}">Login</a>
+
                 </x-button>
             </div>
         </form>

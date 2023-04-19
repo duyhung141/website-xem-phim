@@ -12,6 +12,7 @@
                     <th style="width: 10px">#</th>
                     <th>Email</th>
                     <th>Name</th>
+                    <th>Is_admin</th>
                     <th style="width: 150px">Action</th>
                 </tr>
                 </thead>
@@ -21,6 +22,7 @@
                         <td>{{$item->id}}</td>
                         <td>{{$item->email}}</td>
                         <td>{{$item->name}}</td>
+                        <td>{{$item->is_admin}}</td>
                         <td>
                             <a href="{{route('admin.user.edit',['id'=>$item->id])}}" class="btn btn-warning">Sửa</a>
                             <a onclick="return confirm('Sure kèo ?')"

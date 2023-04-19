@@ -261,8 +261,13 @@
                                 <ul>
                                     <li class="header-search"><a href="#" data-toggle="modal"
                                                                  data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                    @if(session('user'))
+                                        <li class="header-btn"><a href="{{route('login')}}" class="btn">Người Dùng</a></li>
+
+                                    @else
                                     <li class="header-btn"><a href="{{route('login')}}" class="btn">Đăng nhập</a></li>
                                     <li class="header-btn"><a href="{{route("register")}}" class="btn">Đăng ký</a></li>
+                                    @endif
                                 </ul>
                             </div>
                         </nav>
