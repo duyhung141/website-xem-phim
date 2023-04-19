@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Movflx - Online Movies & TV Shows Template</title>
     <meta name="description" content="">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/favicon.png')}}">
@@ -261,13 +262,22 @@
                                 <ul>
                                     <li class="header-search"><a href="#" data-toggle="modal"
                                                                  data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    @if(session('user'))
-                                        <li class="header-btn"><a href="{{route('login')}}" class="btn">Người Dùng</a></li>
-
-                                    @else
-                                    <li class="header-btn"><a href="{{route('login')}}" class="btn">Đăng nhập</a></li>
-                                    <li class="header-btn"><a href="{{route("register")}}" class="btn">Đăng ký</a></li>
-                                    @endif
+                                                                 <div class="header-action d-none d-md-block">
+                                                                    <ul>
+                                                                        <li class="header-search"><a href="#" data-toggle="modal" data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                                                                        @auth
+                                                                            <li class="header-btn"><a href="#" class="btn">{{ auth()->user()->name }}</a></li>
+                                                                            <li class="header-btn"><a href="{{ route('logout') }}" class="btn" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Đăng xuất</a></li>
+                                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                                                @csrf
+                                                                            </form>
+                                                                        @else
+                                                                            <li class="header-btn"><a href="{{ route('login') }}" class="btn">Đăng nhập</a></li>
+                                                                            <li class="header-btn"><a href="{{ route('register') }}" class="btn">Đăng ký</a></li>
+                                                                        @endauth
+                                                                    </ul>
+                                                                </div>
+                                                                
                                 </ul>
                             </div>
                         </nav>
@@ -349,5 +359,13 @@
 <script src="{{asset('js/aos.js')}}"></script>
 <script src="{{asset('js/plugins.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+<script>
+    
+    if(loggedIn){
+        const breadcrumb = document.getElementsByClassName("breadcrumb");
+        breadcumb.classList.add("hidden")
+
+    }
+</script>
 </body>
 </html>

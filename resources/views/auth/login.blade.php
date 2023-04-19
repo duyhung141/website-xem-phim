@@ -48,8 +48,7 @@
                 @endif
 
                 <x-button class="ml-3">
-                    <a href = "{{route('user.index')}}">Login</a>
-
+                    {{ __('Log in') }}
                 </x-button>
             </div>
         </form>

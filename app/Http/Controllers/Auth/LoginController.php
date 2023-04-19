@@ -3,51 +3,28 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Illuminate\Http\Request;
+use App\Http\Requests\Auth\LoginRequest;
 
 class LoginController extends Controller
 {
-    use AuthenticatesUsers;
-
-    protected $redirectTo = 'http://127.0.0.1:8000/';
-
-    public function __construct()
+    /**
+     * Handle an incoming authentication request.
+     *
+     * @param  \App\Http\Requests\Auth\LoginRequest  $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function authenticate(LoginRequest $request)
     {
-        $this->middleware('guest')->except('logout');
-    }
+        $credentials = $request->only('email', 'password');
 
-    // Đăng nhập thành công sẽ chuyển hướng về đường dẫn mong muốn
-    protected function redirectTo()
-    {
-        return '/';
-    }
+        if (auth()->attempt($credentials)) {
+            $request->session()->regenerate();
 
-    // Phương thức xử lý đăng nhập
-    public function login(Request $request)
-    {
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-
-        // Kiểm tra thông tin đăng nhập hợp lệ
-        if (auth()->attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
-            // Nếu đăng nhập thành công, chuyển hướng về trang phim
-            return redirect()->route('/');
-        } else {
-            // Nếu đăng nhập thất bại, chuyển hướng về đăng nhập và hiển thị thông báo lỗi
-            return redirect()->back()->withInput()->withErrors([
-                'email' => 'Thông tin đăng nhập không chính xác',
-            ]);
+            return redirect()->intended(route('dashboard'));
         }
-    }
 
-    // Phương thức xử lý đăng xuất
-    public function logout(Request $request)
-    {
-        auth()->logout(); // Đăng xuất người dùng
-        $request->session()->invalidate(); // Xóa session
-        return redirect(route('user.index')); // Chuyển hướng về trang đăng nhập
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
     }
 }

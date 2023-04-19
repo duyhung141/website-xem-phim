@@ -2960,3 +2960,6 @@ label {
 ul .category{
     display: block !important;
 }
+.hidden {
+    display: none;
+  }
