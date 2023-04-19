@@ -5,11 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::prefix('/')->group(function(){
-    Route::get('/', function () {
-        $categories = \App\Models\Category::all();
-        $countries = \App\Models\Country::all();
-        return view('user.index',compact('categories','countries'));
-    })->name('user.index');
+    Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('user.index');
 
     Route::get("/layoutLogin",function () {
         return view("user.layoutLogin");

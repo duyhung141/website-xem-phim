@@ -239,6 +239,7 @@
                                     </li>
                                     <li><a href="">Thể loại</a>
                                         <ul class="submenu">
+                                            <?php $categories=\App\Models\Category::all(); ?>
                                             @foreach ($categories as $category)
                                                 <li><a href="">{{$category->name}}</a></li>
                                             @endforeach
@@ -246,6 +247,7 @@
                                     </li>
                                     <li><a href="">Quốc gia</a>
                                         <ul class="submenu">
+                                            <?php $countries=\App\Models\Category::all(); ?>
                                             @foreach ($countries as $country)
                                                 <li><a href="">{{$country->name}}</a></li>
                                             @endforeach
@@ -309,9 +311,9 @@
                 <?php }?>
               </nav>
         </div>
-        
+
     </div>
-    
+
 </header>
 <!-- header-area-end -->
 
