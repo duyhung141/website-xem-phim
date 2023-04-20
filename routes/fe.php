@@ -10,10 +10,6 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 Route::prefix('/')->group(function(){
     Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('user.index');
 
-    Route::get("/layoutLogin",function () {
-        return view("user.layoutLogin");
-    })->name("layoutLogin");
-
     Route::get('/movie-details', function () {
         return view('user.movie-details');
     })->name('user.movieDetails');
@@ -27,7 +23,7 @@ Route::prefix('/')->group(function(){
     Route::get("/play-movie",function(){
         return view("user.layout-play-movie");
     })->name("play-movie");
-    
+
 
 });
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
