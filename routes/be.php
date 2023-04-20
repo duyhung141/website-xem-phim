@@ -10,12 +10,11 @@ use App\Http\Controllers\Admin\FilmController;
 
 
 
-Route::prefix('admin')->group(function () {
+Route::group(['prefix' => 'admin','middleware'=>'admin'], function () {
     Route::get('/', function () {
         return view('admin.layout');
-    });
+    })->name('admin.index');
     Route::prefix('user')->group(function () {
-
         Route::get('/', [UserController::class, 'list'])->name('admin.user.list');
         Route::get('create', [UserController::class, 'create'])->name('admin.user.create');
         Route::post('/do-create', [UserController::class, 'doCreate'])->name('admin.user.do-create');

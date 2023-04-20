@@ -20,7 +20,7 @@ class LoginController extends Controller
         if (auth()->attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended(route('user.index'));
+            return redirect()->intended(route('admin.index'));
         }
 
         return back()->withErrors([

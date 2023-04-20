@@ -4,7 +4,7 @@
         <div class="card-header">
         </div>
 
-        <form method="post" action="{{route('admin.film.do-create')}}">
+        <form method="post" action="{{route('admin.film.do-create')}}" enctype="multipart/form-data">
             @csrf
             <div class="card-body">
                 <div class="form-group">
