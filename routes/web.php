@@ -16,7 +16,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 */
 
 Route::get('/dashboard', function () {
-    return view('user.index');
+    return view('admin.index');
 })->middleware(['auth'])->name('dashboard');
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::get("/register","Auth\RegisteredUserController@showRegisterForm")->name('register');

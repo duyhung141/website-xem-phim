@@ -17,4 +17,16 @@ class HomeController extends Controller
         $countries = \App\Models\Country::all();
         return view('user.index',compact('categories','countries'));
     }
+
+    public function movieDetails(){
+        return view('user.movie-details');
+    }
+
+    public function moviesOption(){
+        return view("user.movies-option");
+    }
+
+    public function playMovie(){
+        return view("user.play-movie");
+    }
 }

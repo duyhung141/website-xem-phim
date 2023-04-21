@@ -10,7 +10,7 @@
             <div class="col-xs-12 carausel-sliderWidget">
                 <section id="halim-advanced-widget-4">
                     <div class="section-heading">
-                        <a href="danhmuc.php" title="Phim Hot">
+                        <a href={{route('user.movies-option')}} title="Phim Hot">
                             <span class="h-text">Phim Hot</span>
                         </a>
                         <ul class="heading-nav pull-right hidden-xs">
@@ -22,7 +22,7 @@
                     <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -40,7 +40,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -58,7 +58,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -76,7 +76,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -94,7 +94,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -112,115 +112,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -243,7 +135,7 @@
                 <div class="clearfix"></div>
                 <section id="halim-advanced-widget-4">
                     <div class="section-heading">
-                        <a href="danhmuc.php" title="Phim Oscar">
+                        <a href={{route('user.movies-option')}} title="Phim Oscar">
                             <span class="h-text">Phim Oscar</span>
                         </a>
                         <ul class="heading-nav pull-right hidden-xs">
@@ -255,7 +147,7 @@
                     <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -273,7 +165,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -291,7 +183,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -309,7 +201,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -327,7 +219,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -345,7 +237,7 @@
                         </article>
                         <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                <a class="halim-thumb" href={{route('user.movie-details')}} title="GÓA PHỤ ĐEN">
                                     <figure><img class="lazy img-responsive"
                                                  src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
                                                  alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
@@ -361,116 +253,6 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
-                            <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
-                                    <figure><img class="lazy img-responsive"
-                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
-                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
-                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
-                                                                                           aria-hidden="true"></i>Vietsub</span>
-                                    <div class="icon_overlay"></div>
-                                    <div class="halim-post-title-box">
-                                        <div class="halim-post-title ">
-                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
-                                            <p class="original_title">Black Widow</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </article>
-
-
                     </div>
                 </section>
                 <div class="clearfix"></div>
@@ -479,14 +261,14 @@
                 <!--                start phim lẻ-->
                 <section id="halim-advanced-widget-2">
                     <div class="section-heading">
-                        <a href="danhmuc.php" title="Phim Lẻ">
+                        <a href={{route('user.movies-option')}} title="Phim Lẻ">
                             <span class="h-text">Phim Lẻ</span>
                         </a>
                     </div>
                     <div id="halim-advanced-widget-2-ajax-box" class="halim_box">
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -505,7 +287,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -524,7 +306,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -543,7 +325,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -562,7 +344,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -581,7 +363,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -600,7 +382,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -619,7 +401,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -644,14 +426,14 @@
                 <!--                start phim chiếu rạp-->
                 <section id="halim-advanced-widget-2">
                     <div class="section-heading">
-                        <a href="danhmuc.php" title="Phim Lẻ">
+                        <a href={{route('user.movies-option')}} title="Phim Lẻ">
                             <span class="h-text">Phim Chiếu Rạp</span>
                         </a>
                     </div>
                     <div id="halim-advanced-widget-2-ajax-box" class="halim_box">
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -670,7 +452,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -689,7 +471,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -708,7 +490,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -727,7 +509,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -746,7 +528,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -765,7 +547,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -784,7 +566,7 @@
                         </article>
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
-                                <a class="halim-thumb" href="chitiet.php">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
                                                  src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
                                                  alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
@@ -836,7 +618,7 @@
                             <div class="halim-ajax-popular-post-loading hidden"></div>
                             <div id="halim-ajax-popular-post" class="popular-post">
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -855,7 +637,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -874,7 +656,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -893,7 +675,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -912,7 +694,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -931,7 +713,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -950,7 +732,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"

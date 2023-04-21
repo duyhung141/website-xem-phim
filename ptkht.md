@@ -7,6 +7,7 @@ Lỗi:    Paginate
 Chưa xong:  breadcumb
             comments
             views
+(thêm phim yêu thích)
 
 
 Trang chủ -> phim hot -> do thằng admin chọn/ phim oscar -> do thằng admin chọn/
