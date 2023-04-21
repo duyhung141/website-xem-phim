@@ -1,370 +1,275 @@
-
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Movflx - Online Movies & TV Shows Template</title>
-    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta name="theme-color" content="#234556">
+    <meta http-equiv="Content-Language" content="vi" />
+    <meta content="VN" name="geo.region" />
+    <meta name="DC.language" scheme="utf-8" content="vi" />
+    <meta name="language" content="Việt Nam">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/favicon.png')}}">
-    <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- CSS here -->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}">
-    <link rel="stylesheet" href="{{asset('css/fontawesome-all.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/flaticon.css')}}">
-    <link rel="stylesheet" href="{{asset('css/odometer.css')}}">
-    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
-    <link rel="stylesheet" href="{{asset('css/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('css/default.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+    <link rel="shortcut icon" href="https://www.pngkey.com/png/detail/360-3601772_your-logo-here-your-company-logo-here-png.png" type="image/x-icon" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <title>Phim hay 2021 - Xem phim hay nhất</title>
+    <meta name="description" content="Phim hay 2021 - Xem phim hay nhất, xem phim online miễn phí, phim hot , phim nhanh" />
+    <link rel="canonical" href="">
+    <link rel="next" href="" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:title" content="Phim hay 2020 - Xem phim hay nhất" />
+    <meta property="og:description" content="Phim hay 2020 - Xem phim hay nhất, phim hay trung quốc, hàn quốc, việt nam, mỹ, hong kong , chiếu rạp" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Phim hay 2021- Xem phim hay nhất" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="55" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <style>.--savior-overlay-transform-reset {
-            transform: none !important;
-        }
+    <link rel='dns-prefetch' href='//s.w.org' />
 
-        .--savior-overlay-z-index-top {
-            z-index: 2147483643 !important;
-        }
-
-        .--savior-overlay-position-relative {
-            position: relative;
-        }
-
-        .--savior-overlay-overflow-x-visible {
-            overflow-x: visible !important;
-        }
-
-        .--savior-overlay-overflow-y-visible {
-            overflow-y: visible !important;
-        }
-
-        .--savior-overlay-z-index-reset {
-            z-index: auto !important;
-        }
-
-        .--savior-overlay-display-none {
-            display: none !important;
-        }
-
-        .--savior-overlay-clearfix {
-            clear: both;
-        }
-
-        .--savior-overlay-reset-filter {
-            filter: none !important;
-            backdrop-filter: none !important;
-        }
-
-        .--savior-tooltip-host {
-            z-index: 9999;
-            position: absolute;
-            top: 0;
-        }
-
-        /*Override css styles for Twitch.tv*/
-        main.--savior-overlay-z-index-reset {
-            z-index: auto !important;
-        }
-
-        main.--savior-overlay-z-index-top {
-            z-index: auto !important;
-        }
-
-        main.--savior-overlay-z-index-top .channel-root__player-container + div,
-        main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
-            opacity: 0.1;
-        }
-
-        /*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
-        .--savior-backdrop {
-            position: fixed !important;
-            z-index: 2147483642 !important;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100vw !important;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-
-        .--savior-overlay-twitter-video-player {
-            position: fixed;
-            width: 80%;
-            height: 80%;
-            top: 10%;
-            left: 10%;
-        }
-
-        /* Fix conflict css with zingmp3 */
-        .zm-video-modal.--savior-overlay-z-index-reset {
-            position: absolute;
-        }
-
-        /* Dirty hack for xvideos99 */
-        #page #main.--savior-overlay-z-index-reset {
-            z-index: auto !important;
-        }
-
-        /* Overlay for ok.ru */
-        #vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
-            position: absolute;
-            overflow-y: hidden;
-        }
-
-        /* Fix missing controller for tv.naver.com */
-        .--savior-overlay-z-index-top.rmc_controller,
-        .--savior-overlay-z-index-top.rmc_setting_intro,
-        .--savior-overlay-z-index-top.rmc_highlight,
-        .--savior-overlay-z-index-top.rmc_control_settings {
-            z-index: 2147483644 !important;
-        }
-
-        /* Dirty hack for douyi.com */
-        .swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
-        .swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
-            display: none;
-        }
-
-        .videoWrap + div > div {
-            pointer-events: unset;
-        }
-
-        /* Dirty hack for fpt.ai */
-        .mfp-wrap.--savior-overlay-z-index-top {
-            position: relative;
-        }
-
-        .mfp-wrap.--savior-overlay-z-index-top .mfp-close {
-            display: none;
-        }
-
-        .mfp-wrap.--savior-overlay-z-index-top .mfp-content {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        section.--savior-overlay-z-index-reset > main[role="main"].--savior-overlay-z-index-reset + nav {
-            z-index: -1 !important;
-        }
-
-        section.--savior-overlay-z-index-reset > main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
-            position: relative;
-        }
-
-        div[class^="tiktok"].--savior-overlay-z-index-reset {
-            z-index: 2147483644 !important;
-        }
-
-        @-moz-keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @-o-keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+    <link rel='stylesheet' id='bootstrap-css' href={{asset('user/css/bootstrap.min.css?ver=5.7.2')}} media='all' />
+    <link rel='stylesheet' id='style-css' href="{{asset('user/css/style.css?ver=5.7.2')}}" media='all' />
+    <link rel='stylesheet' id='wp-block-library-css' href={{asset('user/css/style.min.css?ver=5.7.2')}} media='all' />
+    <script type='text/javascript' src={{asset('user/js/jquery.min.js?ver=5.7.2')}} id='halim-jquery-js'></script>
+    <style type="text/css" id="wp-custom-css">
+        .textwidget p a img {
+            width: 100%;
         }
     </style>
+    <style>#header .site-title {background: url(https://www.pngkey.com/png/detail/360-3601772_your-logo-here-your-company-logo-here-png.png) no-repeat top left;background-size: contain;text-indent: -9999px;}</style>
 </head>
-<body>
-
-<!-- preloader -->
-<div id="preloader">
-    <div id="loading-center">
-        <div id="loading-center-absolute">
-            <img src="{{asset('img/preloader.svg')}}" alt="">
+<body class="home blog halimthemes halimmovies" data-masonry="">
+<!--start header-->
+<header id="header">
+    <div class="container">
+        <div class="row" id="headwrap">
+            <div class="col-md-3 col-sm-6 slogan">
+                <p class="site-title"><a class="logo" href="" title="phim hay ">Phim Hay</p>
+                </a>
+            </div>
+            <div class="col-md-5 col-sm-6 halim-search-form hidden-xs">
+                <div class="header-nav">
+                    <div class="col-xs-12">
+                        <form id="search-form-pc" name="halimForm" role="search" action="" method="GET">
+                            <div class="form-group">
+                                <div class="input-group col-xs-12">
+                                    <input id="search" type="text" name="s" class="form-control" placeholder="Tìm kiếm..." autocomplete="off" required>
+                                    <i class="animate-spin hl-spin4 hidden"></i>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="ui-autocomplete ajax-results hidden"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 hidden-xs">
+                <ul>
+                    <li class="btn"><a href="" class="btn btn-warning">Đăng nhập</a></li>
+                    <li class="btn "><a href="" class="btn btn-info">Đăng ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="navbar-container">
+    <div class="container">
+        <nav class="navbar halim-navbar main-navigation" role="navigation" data-dropdown-hover="1">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#halim" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle collapsed pull-right expand-search-form" data-toggle="collapse" data-target="#search-form" aria-expanded="false">
+                    <span class="hl-search" aria-hidden="true"></span>
+                </button>
+                <button type="button" class="navbar-toggle collapsed pull-right get-bookmark-on-mobile">
+                    Bookmarks<i class="hl-bookmark" aria-hidden="true"></i>
+                    <span class="count">0</span>
+                </button>
+                <button type="button" class="navbar-toggle collapsed pull-right get-locphim-on-mobile">
+                    <a href="javascript:;" id="expand-ajax-filter" style="color: #ffed4d;">Lọc <i class="fas fa-filter"></i></a>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="halim">
+                <div class="menu-menu_1-container">
+                    <ul id="menu-menu_1" class="nav navbar-nav navbar-left">
+                        <li class="current-menu-item active"><a title="Trang Chủ" href="index.php">Trang Chủ</a></li>
+                        <li class="mega"><a title="Phim Mới" href="danhmuc.php">Phim Mới</a></li>
+                        <li class="mega dropdown">
+                            <a title="Năm" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Năm <span class="caret"></span></a>
+                            <ul role="menu" class=" dropdown-menu">
+                                <li><a title="Phim 2020" href="danhmuc.php">Phim 2020</a></li>
+                                <li><a title="Năm 2019" href="danhmuc.php">Năm 2019</a></li>
+                                <li><a title="Năm 2018" href="danhmuc.php">Năm 2018</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega dropdown">
+                            <a title="Thể Loại" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Thể Loại <span class="caret"></span></a>
+                            <ul role="menu" class=" dropdown-menu">
+                                <li><a title="Tâm Lý" href="danhmuc.php">Tâm Lý</a></li>
+                                <li><a title="Hành động" href="">Hành động</a></li>
+                                <li><a title="Viễn Tưởng" href="">Viễn Tưởng</a></li>
+                                <li><a title="Hoạt Hình" href="danhmuc.php">Hoạt Hình</a></li>
+                                <li><a title="Kinh Dị" href="danhmuc.php">Kinh Dị</a></li>
+                                <li><a title="Hài Hước" href="danhmuc.php">Hài Hước</a></li>
+                                <li><a title="Hình Sự" href="danhmuc.php">Hình Sự</a></li>
+                                <li><a title="Võ Thuật" href="danhmuc.php">Võ Thuật</a></li>
+                                <li><a title="Cổ Trang" href="danhmuc.php">Cổ Trang</a></li>
+                                <li><a title="Phim Ma" href="danhmuc.php">Phim Ma</a></li>
+                                <li><a title="Tình Cảm" href="danhmuc.php">Tình Cảm</a></li>
+                                <li><a title="Thể Thao - Âm Nhạc" href="danhmuc.php">Thể Thao &#8211; Âm Nhạc</a></li>
+                                <li><a title="Thần Thoại" href="danhmuc.php">Thần Thoại</a></li>
+                                <li><a title="Tài Liệu" href="danhmuc.php">Tài Liệu</a></li>
+                                <li><a title="Phiêu Lưu" href="danhmuc.php">Phiêu Lưu</a></li>
+                                <li><a title="Gia Đình" href="danhmuc.php">Gia Đình</a></li>
+                                <li><a title="Chiến Tranh" href="danhmuc.php">Chiến Tranh</a></li>
+                            </ul>
+                        </li>
+                        <li class="mega dropdown">
+                            <a title="Quốc Gia" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Quốc Gia <span class="caret"></span></a>
+                            <ul role="menu" class=" dropdown-menu">
+                                <li><a title="Việt nam" href="danhmuc.php">Việt nam</a></li>
+                                <li><a title="Ấn Độ" href="danhmuc.php">Ấn Độ</a></li>
+                                <li><a title="Mỹ" href="danhmuc.php">Mỹ</a></li>
+                                <li><a title="Hồng Kông" href="danhmuc.php">Hồng Kông</a></li>
+                                <li><a title="Nhật Bản" href="danhmuc.php">Nhật Bản</a></li>
+                                <li><a title="Trung Quốc" href="danhmuc.php">Trung Quốc</a></li>
+                                <li><a title="Hàn Quốc" href="danhmuc.php">Hàn Quốc</a></li>
+                                <li><a title="Đài Loan" href="danhmuc.php">Đài Loan</a></li>
+                                <li><a title="Thái Lan" href="danhmuc.php">Thái Lan</a></li>
+                                <li><a title="Philippin" href="danhmuc.php">Philippin</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Phim Lẻ" href="danhmuc.php">Phim Lẻ</a></li>
+                        <li><a title="Phim Bộ" href="danhmuc.php">Phim Bộ</a></li>
+                        <li><a title="Phim Chiếu Rạp" href="danhmuc.php">Phim Chiếu Rạp</a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-left" style="background:#000;">
+                    <li><a href="#" onclick="locphim()" style="color: #ffed4d;">Lọc Phim</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse" id="search-form">
+            <div id="mobile-search-form" class="halim-search-form"></div>
+        </div>
+        <div class="collapse navbar-collapse" id="user-info">
+            <div id="mobile-user-login"></div>
         </div>
     </div>
 </div>
-<!-- preloader-end -->
+</div>
 
-<!-- Scroll-top -->
-<button class="scroll-top scroll-to-target" data-target="html">
-    <i class="fas fa-angle-up"></i>
-</button>
-<!-- Scroll-top-end-->
+<div class="container">
+    <div class="row fullwith-slider"></div>
+</div>
+<!--end header-->
 
-<!-- header-area -->
-<header>
-    <div id="sticky-header" class="menu-area transparent-header">
-        <div class="container custom-container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
-                    <div class="menu-wrap">
-                        <nav class="menu-nav show">
-                            <div class="logo">
-                                <a href="{{route('user.index')}}">
-                                    <img src="{{asset('img/logo/logo.png')}}" alt="Logo">
-                                </a>
-                            </div>
-                            <div class="navbar-wrap main-menu d-none d-lg-flex">
-                                <ul class="navigation">
-                                    <li class="active menu-item-has-children"><a
-                                            href="{{route('user.index')}}">Trang chủ</a>
-                                    </li>
-                                    <li><a href="">Thể loại</a>
-                                        <ul class="submenu">
-                                            <?php $categories=\App\Models\Category::all(); ?>
-                                            @foreach ($categories as $category)
-                                                <li><a href="">{{$category->name}}</a></li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                    <li><a href="">Quốc gia</a>
-                                        <ul class="submenu">
-                                            <?php $countries=\App\Models\Category::all(); ?>
-                                            @foreach ($countries as $country)
-                                                <li><a href="">{{$country->name}}</a></li>
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Phim mới</a></li>
-                                    <li><a href="">Phim lẻ</a></li>
-                                </ul>
-                            </div>
-                            <div class="header-action d-none d-md-block">
-                                <ul>
-                                    <li class="header-search"><a href="#" data-toggle="modal"
-                                                                 data-target="#search-modal"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                                                                 <div class="header-action d-none d-md-block">
-                                                                    <ul>
-                                                                        @auth
-                                                                            <li class="header-btn"><a href="#" class="btn">{{ auth()->user()->name }}</a></li>
-                                                                            <li class="header-btn"><a href="{{ route('logout') }}" class="btn" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Đăng xuất</a></li>
-                                                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                                                @csrf
-                                                                            </form>
-                                                                        @else
-                                                                            <li class="header-btn"><a href="{{ route('login') }}" class="btn">Đăng nhập</a></li>
-                                                                            <li class="header-btn"><a href="{{ route('register') }}" class="btn">Đăng ký</a></li>
-                                                                        @endauth
-                                                                    </ul>
-                                                                </div>
+@section('content')
+@show
 
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-
-                    <!-- Mobile Menu  -->
-                    <div class="mobile-menu">
-                        <div class="close-btn"><i class="fas fa-times"></i></div>
-
-                        <nav class="menu-box">
-                            <div class="nav-logo"><a href="index.html"><img src="{{asset('img/logo/logo.png')}}" alt=""
-                                                                            title=""></a>
-                            </div>
-                            <div class="menu-outer">
-                                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="menu-backdrop"></div>
-                    <!-- End Mobile Menu -->
-
-                    <!-- Modal Search -->
-                    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <form>
-                                    <input type="text" placeholder="Tìm kiếm">
-                                    <button><i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal Search-end -->
-
+<!--start footer-->
+<div class="clearfix"></div>
+<footer id="footer" class="clearfix">
+    <div class="container footer-columns">
+        <div class="row container">
+            <div class="widget about col-xs-12 col-sm-4 col-md-4">
+                <div class="footer-logo">
+                    <img class="img-responsive" src="https://img.favpng.com/9/23/19/movie-logo-png-favpng-nRr1DmYq3SNYSLN8571CHQTEG.jpg" alt="Phim hay 2021- Xem phim hay nhất" />
                 </div>
+                Liên hệ QC: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e5958d8c888d849ccb868aa58288848c89cb868a88">[email&#160;protected]</a>
             </div>
-            <nav aria-label="breadcrumb">
-                <?php
-                if(!Request::is("/")){?>
-                <ol class="breadcrumb" style = "background:none">
-                  <li class="breadcrumb-item"><a href="{{route("user.index")}}">Trang chủ</a></li>
-                  <li class="breadcrumb-item"><a href="#">Phim gì đó</a></li>
-                  <li class="breadcrumb-item"><a href="#">Tên phim gì đó</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Tập full</li>
-                </ol>
-                <?php }?>
-              </nav>
         </div>
-
     </div>
+</footer>
+<div id='easy-top'></div>
+<!--end footer-->
 
-</header>
-<!-- header-area-end -->
+<script type='text/javascript' src={{asset('user/js/bootstrap.min.js?ver=5.7.2')}} id='bootstrap-js'></script>
+<script type='text/javascript' src={{asset('user/js/owl.carousel.min.js?ver=5.7.2')}} id='carousel-js'></script>
+
+<script type='text/javascript' src={{asset('user/js/halimtheme-core.min.js?ver=1626273138')}} id='halim-init-js'></script>
 
 
-<!-- main-area -->
 
-@section('oscar-content')
-@show
-@section('hot-content')
-@show
-@section('main-content')
-@show
-<!-- main-area-end -->
 
-<!-- JS here -->
-<script src="{{asset('js/vendor/jquery-3.6.0.min.js')}}"></script>
-<script src="{{asset('js/popper.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/isotope.pkgd.min.js')}}"></script>
-<script src="{{asset('js/imagesloaded.pkgd.min.js')}}"></script>
-<script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
-<script src="{{asset('js/owl.carousel.min.js')}}"></script>
-<script src="{{asset('js/jquery.odometer.min.js')}}"></script>
-<script src="{{asset('js/jquery.appear.js')}}"></script>
-<script src="{{asset('js/slick.min.js')}}"></script>
-<script src="{{asset('js/ajax-form.js')}}"></script>
-<script src="{{asset('js/wow.min.js')}}"></script>
-<script src="{{asset('js/aos.js')}}"></script>
-<script src="{{asset('js/plugins.js')}}"></script>
-<script src="{{asset('js/main.js')}}"></script>
-<script>
+<style>#overlay_mb{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0, 0, 0, 0.7);z-index:99999;cursor:pointer}#overlay_mb .overlay_mb_content{position:relative;height:100%}.overlay_mb_block{display:inline-block;position:relative}#overlay_mb .overlay_mb_content .overlay_mb_wrapper{width:600px;height:auto;position:relative;left:50%;top:50%;transform:translate(-50%, -50%);text-align:center}#overlay_mb .overlay_mb_content .cls_ov{color:#fff;text-align:center;cursor:pointer;position:absolute;top:5px;right:5px;z-index:999999;font-size:14px;padding:4px 10px;border:1px solid #aeaeae;background-color:rgba(0, 0, 0, 0.7)}#overlay_mb img{position:relative;z-index:999}@media only screen and (max-width: 768px){#overlay_mb .overlay_mb_content .overlay_mb_wrapper{width:400px;top:3%;transform:translate(-50%, 3%)}}@media only screen and (max-width: 400px){#overlay_mb .overlay_mb_content .overlay_mb_wrapper{width:310px;top:3%;transform:translate(-50%, 3%)}}</style>
 
-    if(loggedIn){
-        const breadcrumb = document.getElementsByClassName("breadcrumb");
-        breadcumb.classList.add("hidden")
-
+<style>
+    #overlay_pc {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 99999;
+        cursor: pointer;
     }
-</script>
+    #overlay_pc .overlay_pc_content {
+        position: relative;
+        height: 100%;
+    }
+    .overlay_pc_block {
+        display: inline-block;
+        position: relative;
+    }
+    #overlay_pc .overlay_pc_content .overlay_pc_wrapper {
+        width: 600px;
+        height: auto;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    #overlay_pc .overlay_pc_content .cls_ov {
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 999999;
+        font-size: 14px;
+        padding: 4px 10px;
+        border: 1px solid #aeaeae;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #overlay_pc img {
+        position: relative;
+        z-index: 999;
+    }
+    @media only screen and (max-width: 768px) {
+        #overlay_pc .overlay_pc_content .overlay_pc_wrapper {
+            width: 400px;
+            top: 3%;
+            transform: translate(-50%, 3%);
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        #overlay_pc .overlay_pc_content .overlay_pc_wrapper {
+            width: 310px;
+            top: 3%;
+            transform: translate(-50%, 3%);
+        }
+    }
+</style>
+
+<style>
+    .float-ck { position: fixed; bottom: 0px; z-index: 9}
+    * html .float-ck /* IE6 position fixed Bottom */{position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+    #hide_float_left a {background: #0098D2;padding: 5px 15px 5px 15px;color: #FFF;font-weight: 700;float: left;}
+    #hide_float_left_m a {background: #0098D2;padding: 5px 15px 5px 15px;color: #FFF;font-weight: 700;}
+    span.bannermobi2 img {height: 70px;width: 300px;}
+    #hide_float_right a { background: #01AEF0; padding: 5px 5px 1px 5px; color: #FFF;float: left;}
+</style>
 </body>
 </html>

@@ -1,1026 +1,981 @@
 @extends('user.layout')
-
-@section('main-content')
-    <main>
-        <!-- up-coming-movie-area -->
-        <section class="ucm-area ucm-bg" data-background="img/bg/ucm_bg.jpg"
-                 style="background-image: {{url('img/bg/ucm_bg.jpg')}};">
-            <div class="ucm-bg-shape" data-background="img/bg/ucm_bg_shape.png"
-                 style="background-image: {{url('img/bg/ucm_bg_shape.png')}};"></div>
-            <div class="container">
-                <div class="row align-items-end mb-55">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center text-lg-left">
-                            <h2 class="title">Phim sắp chiếu</h2>
-                        </div>
+@section('content')
+    <div class="container">
+        <div class="row container" id="wrapper">
+            <div class="halim-panel-filter">
+                <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
+                    <div class="ajax"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 carausel-sliderWidget">
+                <section id="halim-advanced-widget-4">
+                    <div class="section-heading">
+                        <a href="danhmuc.php" title="Phim Hot">
+                            <span class="h-text">Phim Hot</span>
+                        </a>
+                        <ul class="heading-nav pull-right hidden-xs">
+                            <li class="section-btn halim_ajax_get_post" data-catid="4" data-showpost="12"
+                                data-widgetid="halim-advanced-widget-4" data-layout="6col"><span
+                                    data-text="Chiếu Rạp"></span></li>
+                        </ul>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="ucm-nav-wrap">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="tvShow-tab" data-toggle="tab" href=""
-                                       role="tab"
-                                       aria-controls="tvShow" aria-selected="true">TV Shows</a>
+                    <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+                <section id="halim-advanced-widget-4">
+                    <div class="section-heading">
+                        <a href="danhmuc.php" title="Phim Oscar">
+                            <span class="h-text">Phim Oscar</span>
+                        </a>
+                        <ul class="heading-nav pull-right hidden-xs">
+                            <li class="section-btn halim_ajax_get_post" data-catid="4" data-showpost="12"
+                                data-widgetid="halim-advanced-widget-4" data-layout="6col"><span
+                                    data-text="Chiếu Rạp"></span></li>
+                        </ul>
+                    </div>
+                    <div id="halim-advanced-widget-4-ajax-box" class="halim_box">
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-2 col-sm-4 col-xs-6 thumb grid-item post-38424">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php" title="GÓA PHỤ ĐEN">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_disneyplus_21043-1_63f71aa0.jpeg"
+                                                 alt="GÓA PHỤ ĐEN" title="GÓA PHỤ ĐEN"></figure>
+                                    <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                           aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">GÓA PHỤ ĐEN</p>
+                                            <p class="original_title">Black Widow</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+            </div>
+            <main id="main-contents" class="col-xs-12 col-sm-12 col-md-8">
+                <!--                start phim lẻ-->
+                <section id="halim-advanced-widget-2">
+                    <div class="section-heading">
+                        <a href="danhmuc.php" title="Phim Lẻ">
+                            <span class="h-text">Phim Lẻ</span>
+                        </a>
+                    </div>
+                    <div id="halim-advanced-widget-2-ajax-box" class="halim_box">
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://upload.wikimedia.org/wikipedia/vi/e/e8/Avengers-Infinity_War-Official-Poster.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+                <!--                start phim chiếu rạp-->
+                <section id="halim-advanced-widget-2">
+                    <div class="section-heading">
+                        <a href="danhmuc.php" title="Phim Lẻ">
+                            <span class="h-text">Phim Chiếu Rạp</span>
+                        </a>
+                    </div>
+                    <div id="halim-advanced-widget-2-ajax-box" class="halim_box">
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href="chitiet.php">
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+            </main>
+            <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4">
+                <div id="halim_tab_popular_videos-widget-7" class="widget halim_tab_popular_videos-widget">
+                    <div class="section-bar clearfix">
+                        <div class="section-title">
+                            <span>Top Views</span>
+                            <ul class="halim-popular-tab" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a class="ajax-tab" role="tab" data-toggle="tab" data-showpost="10"
+                                       data-type="today">Day</a>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="movies-tab" data-toggle="tab" href="#movies" role="tab"
-                                       aria-controls="movies" aria-selected="false">Phim</a>
+                                <li role="presentation">
+                                    <a class="ajax-tab" role="tab" data-toggle="tab" data-showpost="10"
+                                       data-type="week">Week</a>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="anime-tab" data-toggle="tab" href="#anime" role="tab"
-                                       aria-controls="anime" aria-selected="false">Anime</a>
+                                <li role="presentation">
+                                    <a class="ajax-tab" role="tab" data-toggle="tab" data-showpost="10"
+                                       data-type="month">Month</a>
+                                </li>
+                                <li role="presentation">
+                                    <a class="ajax-tab" role="tab" data-toggle="tab" data-showpost="10" data-type="all">All</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <section class="tab-content">
+                        <div role="tabpanel" class="tab-pane active halim-ajax-popular-post">
+                            <div class="halim-ajax-popular-post-loading hidden"></div>
+                            <div id="halim-ajax-popular-post" class="popular-post">
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="tvShow" role="tabpanel" aria-labelledby="tvShow-tab">
-                        <div class="ucm-active owl-carousel owl-loaded owl-drag">
-
-
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                     style="transform: translate3d(-1330px, 0px, 0px); transition: all 0s ease 0s; width: 4323px;">
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img
-                                                        src="{{asset('img/poster/ucm_poster02.jpg')}}}" alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Perfect Match</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">4k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">8k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster05.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Cooking</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster01.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Women's Day</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster02.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Perfect Match</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">4k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">8k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster05.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Cooking</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster01.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Women's Day</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster02.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Perfect Match</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">4k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 302.5px; margin-right: 30px;">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">8k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-nav">
-                                <button type="button" role="presentation" class="owl-prev"><i
-                                        class="fas fa-angle-left"></i>
-                                </button>
-                                <button type="button" role="presentation" class="owl-next"><i
-                                        class="fas fa-angle-right"></i></button>
-                            </div>
-                            <div class="owl-dots disabled"></div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="movies" role="tabpanel" aria-labelledby="movies-tab">
-                        <div class="ucm-active owl-carousel owl-loaded owl-drag">
-
-
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;">
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster05.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Cooking</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster06.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Hikers</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">4k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster07.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Life Quotes</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster08.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Beachball</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">4k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-nav">
-                                <button type="button" role="presentation" class="owl-prev"><i
-                                        class="fas fa-angle-left"></i>
-                                </button>
-                                <button type="button" role="presentation" class="owl-next"><i
-                                        class="fas fa-angle-right"></i></button>
-                            </div>
-                            <div class="owl-dots disabled"></div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="anime" role="tabpanel" aria-labelledby="anime-tab">
-                        <div class="ucm-active owl-carousel owl-loaded owl-drag">
-
-
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s;">
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster01.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Women's Day</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster02.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Perfect Match</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">4k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a>
-                                                    </h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">8k</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item">
-                                        <div class="movie-item mb-50">
-                                            <div class="movie-poster">
-                                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster05.jpg')}}"
-                                                                                  alt=""></a>
-                                            </div>
-                                            <div class="movie-content">
-                                                <div class="top">
-                                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Cooking</a></h5>
-                                                    <span class="date">2021</span>
-                                                </div>
-                                                <div class="bottom">
-                                                    <ul>
-                                                        <li><span class="quality">hd</span></li>
-                                                        <li>
-                                                        <span class="duration"><i
-                                                                class="far fa-clock"></i> 128 min</span>
-                                                            <span class="rating"><i
-                                                                    class="fas fa-thumbs-up"></i> 3.5</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-nav">
-                                <button type="button" role="presentation" class="owl-prev"><i
-                                        class="fas fa-angle-left"></i>
-                                </button>
-                                <button type="button" role="presentation" class="owl-next"><i
-                                        class="fas fa-angle-right"></i></button>
-                            </div>
-                            <div class="owl-dots disabled"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- up-coming-movie-area-end -->
-
-
-        <!-- top-rated-movie -->
-        <section class="top-rated-movie tr-movie-bg" data-background="img/bg/tr_movies_bg.jpg"
-                 style="background-image: {{url('img/bg/tr_movies_bg.jpg')}};">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center mb-50">
-                            <h2 class="title">Trending</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="tr-movie-menu-active text-center">
-                            <button class="active" data-filter="*">TV Shows</button>
-                            <button class="" data-filter=".cat-one">Movies</button>
-                            <button class="" data-filter=".cat-two">documentary</button>
-                            <button class="" data-filter=".cat-three">sports</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tr-movie-active" style="position: relative; height: 1144.97px;">
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two"
-                         style="position: absolute; left: 0%; top: 0px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster01.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Women's Day</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one cat-three"
-                         style="position: absolute; left: 24.9624%; top: 0px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster02.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Perfect Match</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">4k</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two"
-                         style="position: absolute; left: 50%; top: 0px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one cat-three"
-                         style="position: absolute; left: 74.9624%; top: 0px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">8K</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two"
-                         style="position: absolute; left: 0%; top: 572px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster05.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Cooking</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">3D</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one cat-three"
-                         style="position: absolute; left: 24.9624%; top: 572px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster06.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Hikaru</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.9</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-two"
-                         style="position: absolute; left: 50%; top: 572px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster07.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Life Quotes</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">4K</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.9</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6 grid-item grid-sizer cat-one cat-three"
-                         style="position: absolute; left: 74.9624%; top: 572px;">
-                        <div class="movie-item mb-60">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster08.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Beachball</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">4K</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.9</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- top-rated-movie-end -->
-
-        <!-- tv-series-area -->
-        <section class="tv-series-area tv-series-bg" data-background="img/bg/tv_series_bg.jpg"
-                 style="background-image: {{url('img/bg/tv_series_bg.jpg')}};">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center mb-50">
-                            <span class="sub-title">Best TV Series</span>
-                            <h2 class="title">World Best TV Series</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-2 col-lg-3 col-sm-5">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster09.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">Women's Day</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-sm-5">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster10.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Perfect Match</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">4k</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-sm-5">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster03.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Dog Woof</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-sm-5">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-sm-5">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="{{route('user.movieDetails')}}"><img src="{{asset('img/poster/ucm_poster04.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="{{route('user.movieDetails')}}">The Easy Reach</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- tv-series-area-end -->
-
-
-    </main>
+            </aside>
+        </div>
+    </div>
 @endsection

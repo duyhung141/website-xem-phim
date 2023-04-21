@@ -14,16 +14,9 @@ Route::prefix('/')->group(function(){
         return view('user.movie-details');
     })->name('user.movieDetails');
 
-    Route::get("/movie-hot",function(){
-        return view("user.movie-hot");
-    })->name("movie-hot");
-    Route::get("/movie-oscar",function(){
-        return view("user.movie-oscar");
-    })->name("movie-oscar");
     Route::get("/play-movie",function(){
-        return view("user.layout-play-movie");
+        return view("user.play-movie");
     })->name("play-movie");
-
-
 });
+
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');

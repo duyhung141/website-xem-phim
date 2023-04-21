@@ -127,9 +127,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
-                    @else
-                        <li class="header-btn"><a href="{{ route('login') }}" class="btn">Đăng nhập</a></li>
-                        <li class="header-btn"><a href="{{ route('register') }}" class="btn">Đăng ký</a></li>
                     @endauth
                 </ul>
 
