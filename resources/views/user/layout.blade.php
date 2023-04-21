@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <meta name="theme-color" content="#234556">
@@ -169,10 +170,14 @@
 <div id='easy-top'></div>
 <!--end footer-->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"  ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"  ></script>
+
 <script type='text/javascript' src={{asset('user/js/bootstrap.min.js?ver=5.7.2')}} id='bootstrap-js'></script>
 <script type='text/javascript' src={{asset('user/js/owl.carousel.min.js?ver=5.7.2')}} id='carousel-js'></script>
 
 <script type='text/javascript' src={{asset('user/js/halimtheme-core.min.js?ver=1626273138')}} id='halim-init-js'></script>
+
 
 
 

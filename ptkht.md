@@ -1,7 +1,5 @@
 Lỗi:    Paginate
         Storage
-        Login
-        Register
         Admin
         FilmActor
 Chưa xong:  breadcumb

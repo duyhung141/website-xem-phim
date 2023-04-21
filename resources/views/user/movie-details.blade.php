@@ -116,11 +116,39 @@
                     </div>
                 </section>
 
-                <!-- star-comment -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12" style="background-color:#fff;height:70vh">
+                <!-- start-comment -->
+                <div class="container mt-5">
+                    <div class="d-flex justify-content-center row">
+                        <div class="col-md-8"  style="background-color:#fff">
+                            <div class="d-flex flex-column comment-section">
+                                <div class="bg-white p-2">
+                                    <div class="row" style = "margin-top: 10px;">
+                                        <div class="col-md-1">
+                                        <img class="rounded-circle" src="{{asset("user/img/tải xuống.png")}}" width="40">
+                                    </div>
+                                    <div class="col-md-11">
+                                        <div class="d-flex flex-column justify-content-start ml-2"><span class="d-block font-weight-bold name">Marry Andrews</span><br>
+                                        <span class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                                    </div>
 
+                                    </div>
+                                    <div class="mt-2">
+                                        <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white">
+                                    <div class=" fs-12 d-flex gap-3" style = "display:flex; gap:20px;" >
+                                        <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up" ></i><span class="ml-1">Like</span></div>
+                                        <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span class="ml-1">Comment</span></div>
+                                        <div class="like p-2 cursor"><i class="fa fa-share"></i><span class="ml-1">Share</span></div>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-2">
+                                    
+                                        <textarea class="form-control ml-1 shadow-none textarea" style = "margin: 20px 0px;"></textarea></div>
+                                    <div class="mt-2 text-right" style = "margin-bottom: 10px;"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div> <!-- end-comment -->
