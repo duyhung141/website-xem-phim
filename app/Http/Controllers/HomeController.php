@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Film;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -28,5 +29,15 @@ class HomeController extends Controller
 
     public function playMovie(){
         return view("user.play-movie");
+    }
+
+    public function search(Request $request){
+        $searchTerm = $request->input('s');
+
+        $films = Film::where('name', 'LIKE', "%$searchTerm%")
+            ->orWhere('description', 'LIKE', "%$searchTerm%")
+            ->get();
+
+        return view('user.search', compact('films'));
     }
 }

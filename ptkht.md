@@ -1,5 +1,4 @@
 Lỗi:    Paginate
-        Storage
         Admin
         FilmActor
 Chưa xong:  breadcumb

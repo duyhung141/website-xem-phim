@@ -7,8 +7,9 @@
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="yoast_breadcrumb hidden-xs"><span><span><a href="">Phim hay</a> » <span><a
-                                                href="danhmuc.php">Trung Quốc</a> » <span class="breadcrumb_last"
-                                                                                          aria-current="page">Tôi Và Chúng Ta Ở Bên Nhau</span></span></span></span>
+                                                href="{{route('user.movies-option')}}">Trung Quốc</a> » <span
+                                                class="breadcrumb_last"
+                                                aria-current="page">Tôi Và Chúng Ta Ở Bên Nhau</span></span></span></span>
                             </div>
                         </div>
                     </div>
@@ -73,14 +74,14 @@
                         </div>
                         <div id="halim-list-server">
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active server-1"><a href="#server-0"
-                                                                                   aria-controls="server-0" role="tab"
-                                                                                   data-toggle="tab"><i
-                                            class="hl-server"></i> Vietsub</a></li>
+                                <li role="presentation" class="active server-1">
+                                    <a href="#server-0" aria-controls="server-0" role="tab"
+                                       data-toggle="tab"><i class="hl-server"></i> Vietsub
+                                    </a>
+                                </li>
                             </ul>
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active server-1" id="server-0">
-
                                 </div>
                             </div>
                         </div>
@@ -88,17 +89,61 @@
                         <div class="htmlwrap clearfix">
                             <div id="lightout"></div>
                         </div>
+
                 </section>
 
 
-                <!-- star-comment -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12" style="background-color:#fff;height:70vh">
+                <!-- start-comment -->
+                <div class="container mt-5">
+                    <div class="d-flex justify-content-center row">
+                        <div class="col-md-8" style="background-color:#fff">
+                            <div class="d-flex flex-column comment-section">
+                                <div class="bg-white p-2">
+                                    <div class="row" style="margin-top: 10px;">
+                                        <div class="col-md-1">
+                                            <img class="rounded-circle" src="{{asset("user/img/tải xuống.png")}}"
+                                                 width="40">
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="d-flex flex-column justify-content-start ml-2"><span
+                                                    class="d-block font-weight-bold name">Marry Andrews</span><br>
+                                                <span class="date text-black-50">Shared publicly - Jan 2020</span></div>
+                                        </div>
 
+                                    </div>
+                                    <div class="mt-2">
+                                        <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                            ex ea commodo consequat.</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white">
+                                    <div class=" fs-12 d-flex gap-3" style="display:flex; gap:20px;">
+                                        <div class="like p-2 cursor"><i class="fa fa-thumbs-o-up"></i><span
+                                                class="ml-1">Like</span></div>
+                                        <div class="like p-2 cursor"><i class="fa fa-commenting-o"></i><span
+                                                class="ml-1">Comment</span></div>
+                                        <div class="like p-2 cursor"><i class="fa fa-share"></i><span
+                                                class="ml-1">Share</span></div>
+                                    </div>
+                                </div>
+                                <div class="bg-light p-2">
+
+                                    <textarea class="form-control ml-1 shadow-none textarea"
+                                              style="margin: 20px 0px;"></textarea></div>
+                                <div class="mt-2 text-right" style="margin-bottom: 10px;">
+                                    <button class="btn btn-primary btn-sm shadow-none" type="button">Post comment
+                                    </button>
+                                    <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div> <!-- end-comment -->
+                </div>
+                <!-- end-comment -->
                 <section class="related-movies">
                     <div id="halim_related_movies-2xx" class="wrap-slider">
                         <div class="section-bar clearfix">
@@ -107,7 +152,7 @@
                         <div id="halim_related_movies-2" class="owl-carousel owl-theme related-film">
                             <article class="thumb grid-item post-38494">
                                 <div class="halim-item">
-                                    <a class="halim-thumb" href="chitiet.php" title="Câu Chuyện Kinh Dị Cổ Điển">
+                                    <a class="halim-thumb" href="{{route('user.movie-details')}}" title="Câu Chuyện Kinh Dị Cổ Điển">
                                         <figure><img class="lazy img-responsive"
                                                      src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-Hp2tnGf-zNQ/YO68R-yZRcI/AAAAAAAAJqY/Nc9qNCLgBtcjeWjOEIrOW45H5Vvva4xNgCLcBGAsYHQ/s320/MV5BNzE1YjdmMWYtMDk5ZS00YzEzLWE4NjctYmFiZmIwNzU0MjQ5XkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_.jpg"
                                                      alt="Câu Chuyện Kinh Dị Cổ Điển"
@@ -126,7 +171,7 @@
                             </article>
                             <article class="thumb grid-item post-38494">
                                 <div class="halim-item">
-                                    <a class="halim-thumb" href="chitiet.php" title="Câu Chuyện Kinh Dị Cổ Điển">
+                                    <a class="halim-thumb" href="{{route('user.movie-details')}}" title="Câu Chuyện Kinh Dị Cổ Điển">
                                         <figure><img class="lazy img-responsive"
                                                      src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-Hp2tnGf-zNQ/YO68R-yZRcI/AAAAAAAAJqY/Nc9qNCLgBtcjeWjOEIrOW45H5Vvva4xNgCLcBGAsYHQ/s320/MV5BNzE1YjdmMWYtMDk5ZS00YzEzLWE4NjctYmFiZmIwNzU0MjQ5XkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_.jpg"
                                                      alt="Câu Chuyện Kinh Dị Cổ Điển"
@@ -145,7 +190,7 @@
                             </article>
                             <article class="thumb grid-item post-38494">
                                 <div class="halim-item">
-                                    <a class="halim-thumb" href="chitiet.php" title="Câu Chuyện Kinh Dị Cổ Điển">
+                                    <a class="halim-thumb" href="{{route('user.movie-details')}}" title="Câu Chuyện Kinh Dị Cổ Điển">
                                         <figure><img class="lazy img-responsive"
                                                      src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-Hp2tnGf-zNQ/YO68R-yZRcI/AAAAAAAAJqY/Nc9qNCLgBtcjeWjOEIrOW45H5Vvva4xNgCLcBGAsYHQ/s320/MV5BNzE1YjdmMWYtMDk5ZS00YzEzLWE4NjctYmFiZmIwNzU0MjQ5XkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_.jpg"
                                                      alt="Câu Chuyện Kinh Dị Cổ Điển"
@@ -164,7 +209,7 @@
                             </article>
                             <article class="thumb grid-item post-38494">
                                 <div class="halim-item">
-                                    <a class="halim-thumb" href="chitiet.php" title="Câu Chuyện Kinh Dị Cổ Điển">
+                                    <a class="halim-thumb" href="{{route('user.movie-details')}}" title="Câu Chuyện Kinh Dị Cổ Điển">
                                         <figure><img class="lazy img-responsive"
                                                      src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-Hp2tnGf-zNQ/YO68R-yZRcI/AAAAAAAAJqY/Nc9qNCLgBtcjeWjOEIrOW45H5Vvva4xNgCLcBGAsYHQ/s320/MV5BNzE1YjdmMWYtMDk5ZS00YzEzLWE4NjctYmFiZmIwNzU0MjQ5XkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_.jpg"
                                                      alt="Câu Chuyện Kinh Dị Cổ Điển"
@@ -183,7 +228,7 @@
                             </article>
                             <article class="thumb grid-item post-38494">
                                 <div class="halim-item">
-                                    <a class="halim-thumb" href="chitiet.php" title="Câu Chuyện Kinh Dị Cổ Điển">
+                                    <a class="halim-thumb" href="{{route('user.movie-details')}}" title="Câu Chuyện Kinh Dị Cổ Điển">
                                         <figure><img class="lazy img-responsive"
                                                      src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-Hp2tnGf-zNQ/YO68R-yZRcI/AAAAAAAAJqY/Nc9qNCLgBtcjeWjOEIrOW45H5Vvva4xNgCLcBGAsYHQ/s320/MV5BNzE1YjdmMWYtMDk5ZS00YzEzLWE4NjctYmFiZmIwNzU0MjQ5XkEyXkFqcGdeQXVyMTA3MDAxNDcw._V1_.jpg"
                                                      alt="Câu Chuyện Kinh Dị Cổ Điển"
@@ -250,7 +295,7 @@
                             <div class="halim-ajax-popular-post-loading hidden"></div>
                             <div id="halim-ajax-popular-post" class="popular-post">
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -269,7 +314,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -288,7 +333,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -307,7 +352,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -326,7 +371,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -345,7 +390,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
@@ -364,7 +409,7 @@
                                     </div>
                                 </div>
                                 <div class="item post-37176">
-                                    <a href="chitiet.php" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                    <a href="{{route('user.movie-details')}}" title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
                                                 src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"

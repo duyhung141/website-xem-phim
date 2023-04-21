@@ -16,6 +16,7 @@ Route::prefix('/')->group(function(){
 
     Route::get('/play-movie', [\App\Http\Controllers\HomeController::class,'playMovie'])->name("user.play-movie");
 
+    Route::get('/search', [\App\Http\Controllers\HomeController::class,'search'])->name("user.search");
 });
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
