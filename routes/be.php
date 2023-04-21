@@ -12,8 +12,8 @@ use App\Http\Controllers\Admin\FilmController;
 
 Route::group(['prefix' => 'admin','middleware'=>'admin'], function () {
     Route::get('/', function () {
-        return view('admin.layout');
-    })->name('admin.index');
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
     Route::prefix('user')->group(function () {
         Route::get('/', [UserController::class, 'list'])->name('admin.user.list');
         Route::get('create', [UserController::class, 'create'])->name('admin.user.create');
