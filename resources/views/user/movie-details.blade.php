@@ -1,260 +1,263 @@
 @extends('user.layout')
-@section('main-content')
+@section('content')
 
-    <main>
-
-        <!-- movie-details-area -->
-        <section class="movie-details-area" data-background="img/bg/movie_details_bg.jpg">
-            <div class="container">
-                <div class="row align-items-center position-relative">
-                    <div class="col-xl-3 col-lg-4">
-                        <div class="movie-details-img">
-                            <img src="{{asset('img/poster/movie_details_img.jpg')}}" alt="">
-                            <a href="https://www.youtube.com/watch?v=R2gbPxeNk2E" class="popup-video"><img
-                                    src="{{asset('img/images/play_icon.png')}}" alt=""></a>
+    <div class="container">
+        <div class="row container" id="wrapper">
+            <div class="halim-panel-filter">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="yoast_breadcrumb hidden-xs"><span><span><a
+                                            href="danhmuc.php">Phim hay</a> » <span><a href="danhmuc.php">Mỹ</a> » <span
+                                                class="breadcrumb_last"
+                                                aria-current="page">GÓA PHỤ ĐEN</span></span></span></span></div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-8">
-                        <div class="movie-details-content">
-                            <h5>New Episodes</h5>
-                            <h2>The Easy <span>Reach</span></h2>
-                            <div class="banner-meta">
-                                <ul>
-                                    <li class="quality">
-                                        <span>Pg 18</span>
-                                        <span>hd</span>
-                                    </li>
-                                    <li class="category">
-                                        <a href="#">Quốc gia: Romance,</a><br>
-                                        <a href="#">Thể loại: Drama</a><br>
-                                        <a href="#">Diễn Viên: Shin Hyun Soo, Im Se Mi, Kim Ki Hae, Lee Soon Won, Choi
-                                            Moon Hee, Kim Su Gyeom</a><br>
-                                        <a href="#">Tình trạng: Phim đang chiếu</a> <br>
-                                        <a href="#">Ngôn ngữ: Phụ đề Việt</a><br>
-                                        <a href="#"> Năm sản xuất: 2023</a>
-
-
-                                    </li>
-                                    <li class="release-time">
-                                        <span><i class="far fa-calendar-alt"></i> 2021</span>
-                                        <span><i class="far fa-clock"></i> 128 min</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many
-                                variations of passages of lorem
-                                Ipsum available, but the majority have suffered alteration in some injected humour.</p>
-                            <div class="movie-details-prime">
-                                <ul>
-                                    <li class="share"><a href="#"><i class="fas fa-share-alt"></i> Share</a></li>
-                                    <li class="streaming">
-                                        <h6>Prime Video</h6>
-                                        <span>Streaming Channels</span>
-                                    </li>
-                                    <li class="watch"> <button style = "border:none;padding:10px 34px; background-color:#e4d804; border-radius:50px;   "><a href="{{route('play-movie')}}" style="color:#fff;font-size:14px;"> Watch Now</a></button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
+                <div id="ajax-filter" class="panel-collapse collapse" aria-expanded="true" role="menu">
+                    <div class="ajax"></div>
                 </div>
             </div>
-        </section>
-        <!-- movie-details-area-end -->
+            <main id="main-contents" class="col-xs-12 col-sm-12 col-md-8">
+                <section id="content" class="test">
+                    <div class="clearfix wrap-content">
 
-        <!-- episode-area -->
-        <section class="episode-area episode-bg" data-background="img/bg/episode_bg.jpg">
-            <div class="container">
-
-
-                <div class="row">
-                    <div class="col-12">
-                        <div class="movie-history-wrap">
-                            <h3 class="title">About <span>History</span></h3>
-                            <p>Lorem ipsum dolor sit amet, consecetur adipiscing elseddo eiusmod tempor.There are many
-                                variations of passages of lorem
-                                Ipsum available, but the majority have suffered alteration in some injected humour.There
-                                are
-                                many variations of passages
-                                of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                                injected humour, or randomised
-                                words which don't look even slightly believable. If you are going to use a passage of
-                                Lorem
-                                Ipsum, you need to be sure
-                                there isn't anything errassing hidden in the middle of text. All the Lorem Ipsum
-                                generators
-                                on the Internet tend to
-                                repeat predefined chunks as necessary, making this the first true generator on the
-                                Internet.
-                                It uses a dictionary of
-                                over 200 Latin words, combined with a handful</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="movie-episode-wrap">
-                            <div class="episode-top-wrap">
-                                <div class="section-title">
-                                    <span class="sub-title">ONLINE STREAMING</span>
-                                    <h2 class="title">Watch Full Episode</h2>
-                                </div>
-                                <div class="total-views-count">
-                                    <p>2.7 million <i class="far fa-eye"></i></p>
-                                </div>
+                        <div class="halim-movie-wrapper">
+                            <div class="title-block">
+                                <!-- // bredcrumb -->
                             </div>
-                            <div class="episode-watch-wrap">
-                                <div class="accordion" id="accordionExample">
-                                    <div class="card">
-                                        <div id="comment-tab">
-
-                                            <div class="box-comment" id="tabs-facebook">
-
-                                                <div id="mp-comments"
-                                                     class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop"
-                                                     data-href="https://link.motphim.vip/phim/hoc-ky-sinh-tu-11100.html"
-                                                     data-numposts="10" data-order-by="reverse_time"
-                                                     data-colorscheme="light" data-width="650" fb-xfbml-state="rendered"
-                                                     fb-iframe-plugin-query="app_id=711081303025670&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650">
-                                                    <span style="vertical-align: bottom; width: 650px; height: 1447px;"><iframe
-                                                            name="f279765141ca5e" width="650px" height="100px"
-                                                            data-testid="fb:comments Facebook Social Plugin"
-                                                            title="fb:comments Facebook Social Plugin" frameborder="0"
-                                                            allowtransparency="true" allowfullscreen="true"
-                                                            scrolling="no" allow="encrypted-media"
-                                                            src="https://web.facebook.com/v7.0/plugins/comments.php?app_id=711081303025670&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df26cb1935e25698%26domain%3Dmotchill.tv%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fmotchill.tv%252Ff3b72ee23a52d64%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=650&amp;height=100&amp;href=https%3A%2F%2Flink.motphim.vip%2Fphim%2Fhoc-ky-sinh-tu-11100.html&amp;locale=vi_VN&amp;numposts=10&amp;order_by=reverse_time&amp;sdk=joey&amp;version=v7.0&amp;width=650"
-                                                            style="border: none; visibility: visible; width: 650px; height: 1447px;"
-                                                            class=""></iframe></span></div>
-                                                <script>document.getElementById("mp-comments").dataset.width = $("#mp-comments").parent().width();</script>
-                                            </div>
-
-                                        </div>
+                            <div class="movie_info col-xs-12">
+                                <div class="movie-poster col-md-3">
+                                    <img class="movie-thumb"
+                                         src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-fL7o9nefEPc/YOk_YIB6QRI/AAAAAAAAJn8/hahCLlgRq4AFc8O4YeKhpb5zncixXAF0wCLcBGAsYHQ/s320/images.jpg"
+                                         alt="GÓA PHỤ ĐEN">
+                                    <div class="bwa-content">
+                                        <div class="loader"></div>
+                                        <a href="xemphim.php" class="bwac-btn">
+                                            <i class="fa fa-play"></i>
+                                        </a>
                                     </div>
-
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="episode-img">
-                            <img src="{{asset('img/images/episode_img.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- episode-area-end -->
-
-        <!-- tv-series-area -->
-        <section class="tv-series-area tv-series-bg" data-background="img/bg/tv_series_bg02.jpg">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center mb-50">
-                            <span class="sub-title">Best TV Series</span>
-                            <h2 class="title">World Best TV Series</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="movie-details.html"><img src="{{asset('img/poster/ucm_poster09.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="movie-details.html">Women's Day</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
+                                <div class="film-poster col-md-9">
+                                    <h1 class="movie-title title-1"
+                                        style="display:block;line-height:35px;margin-bottom: -14px;color: #ffed4d;text-transform: uppercase;font-size: 18px;">
+                                        GÓA PHỤ ĐEN</h1>
+                                    <h2 class="movie-title title-2" style="font-size: 12px;">Black Widow (2021)</h2>
+                                    <ul class="list-info-group">
+                                        <li class="list-info-group-item"><span>Trạng Thái</span> : <span
+                                                class="quality">HD</span><span class="episode">Vietsub</span></li>
+                                        <li class="list-info-group-item"><span>Điểm IMDb</span> : <span
+                                                class="imdb">7.2</span></li>
+                                        <li class="list-info-group-item"><span>Thời lượng</span> : 133 Phút</li>
+                                        <li class="list-info-group-item"><span>Thể loại</span> : <a href=""
+                                                                                                    rel="category tag">Chiếu
+                                                Rạp</a>, <a href="" rel="category tag">Hành động</a>, <a href=""
+                                                                                                         rel="category tag">Phiêu
+                                                Lưu</a>, <a href="" rel="category tag">Viễn Tưởng</a></li>
+                                        <li class="list-info-group-item"><span>Quốc gia</span> : <a href=""
+                                                                                                    rel="tag">Mỹ</a>
                                         </li>
+                                        <li class="list-info-group-item"><span>Đạo diễn</span> : <a class="director"
+                                                                                                    rel="nofollow"
+                                                                                                    href="https://phimhay.co/dao-dien/cate-shortland"
+                                                                                                    title="Cate Shortland">Cate
+                                                Shortland</a></li>
+                                        <li class="list-info-group-item last-item"
+                                            style="-overflow: hidden;-display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-flex: 1;-webkit-box-orient: vertical;">
+                                            <span>Diễn viên</span> : <a href="" rel="nofollow" title="C.C. Smiff">C.C.
+                                                Smiff</a>, <a href="" rel="nofollow" title="David Harbour">David
+                                                Harbour</a>, <a href="" rel="nofollow" title="Erin Jameson">Erin
+                                                Jameson</a>, <a href="" rel="nofollow" title="Ever Anderson">Ever
+                                                Anderson</a>, <a href="" rel="nofollow" title="Florence Pugh">Florence
+                                                Pugh</a>, <a href="" rel="nofollow" title="Lewis Young">Lewis Young</a>,
+                                            <a href="" rel="nofollow" title="Liani Samuel">Liani Samuel</a>, <a href=""
+                                                                                                                rel="nofollow"
+                                                                                                                title="Michelle Lee">Michelle
+                                                Lee</a>, <a href="" rel="nofollow" title="Nanna Blondell">Nanna
+                                                Blondell</a>, <a href="" rel="nofollow" title="O-T Fagbenle">O-T
+                                                Fagbenle</a></li>
                                     </ul>
+                                    <div class="movie-trailer hidden"></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="movie-details.html"><img src="{{asset('img/poster/ucm_poster10.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="movie-details.html">The Perfect Match</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
+                        <div class="clearfix"></div>
+                        <div id="halim_trailer"></div>
+                        <div class="clearfix"></div>
+                        <div class="section-bar clearfix">
+                            <h2 class="section-title"><span style="color:#ffed4d">Nội dung phim</span></h2>
+                        </div>
+                        <div class="entry-content htmlwrap clearfix">
+                            <div class="video-item halim-entry-box">
+                                <article id="post-38424" class="item-content">
+                                    Phim <a href="https://phimhay.co/goa-phu-den-38424/">GÓA PHỤ ĐEN</a> - 2021 - Mỹ:
+                                    <p>Góa Phụ Đen &#8211; Black Widow 2021: Natasha Romanoff hay còn gọi là Góa phụ đen
+                                        phải đối mặt với những phần đen tối của mình khi một âm mưu nguy hiểm liên quan
+                                        đến quá khứ của cô nảy sinh. Bị truy đuổi bởi một thế lực sẽ không có gì có thể
+                                        hạ gục cô, Natasha phải đối mặt với lịch sử là một điệp viên những mối quan hệ
+                                        tan vỡ đã để lại trong cô từ lâu trước khi cô trở thành thành viên của biệt đội
+                                        Avenger.</p>
+                                    <h5>Từ Khoá Tìm Kiếm:</h5>
                                     <ul>
-                                        <li><span class="quality">4k</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
+                                        <li>black widow vietsub</li>
+                                        <li>Black Widow 2021 Vietsub</li>
+                                        <li>phim black windows 2021</li>
+                                        <li>xem phim black windows</li>
+                                        <li>xem phim black widow</li>
+                                        <li>phim black windows</li>
+                                        <li>goa phu den</li>
+                                        <li>xem phim black window</li>
+                                        <li>phim black widow 2021</li>
+                                        <li>xem black widow</li>
                                     </ul>
-                                </div>
+                                </article>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="movie-details.html"><img src="{{asset('img/poster/ucm_poster03.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="movie-details.html">The Dog Woof</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                </section>
+
+                <!-- star-comment -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12" style="background-color:#fff;height:70vh">
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-sm-6">
-                        <div class="movie-item mb-50">
-                            <div class="movie-poster">
-                                <a href="movie-details.html"><img src="{{asset('img/poster/ucm_poster04.jpg')}}" alt=""></a>
-                            </div>
-                            <div class="movie-content">
-                                <div class="top">
-                                    <h5 class="title"><a href="movie-details.html">The Easy Reach</a></h5>
-                                    <span class="date">2021</span>
-                                </div>
-                                <div class="bottom">
-                                    <ul>
-                                        <li><span class="quality">hd</span></li>
-                                        <li>
-                                            <span class="duration"><i class="far fa-clock"></i> 128 min</span>
-                                            <span class="rating"><i class="fas fa-thumbs-up"></i> 3.5</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- tv-series-area-end -->
-        
+                </div> <!-- end-comment -->
 
 
-    </main>
+                <section class="related-movies">
+                    <div id="halim_related_movies-2xx" class="wrap-slider">
+                        <div class="section-bar clearfix">
+                            <h3 class="section-title"><span>CÓ THỂ BẠN MUỐN XEM</span></h3>
+                        </div>
+                        <div id="halim_related_movies-2" class="owl-carousel owl-theme related-film">
+                            <article class="thumb grid-item post-38498">
+                                <div class="halim-item">
+                                    <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                                        <figure><img class="lazy img-responsive"
+                                                     src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-w860_-tiHFI/YO7DW5hwmNI/AAAAAAAAJqg/yFXRsVIh70oslGUKU4Fg3NxipcmCiPt3ACLcBGAsYHQ/s320/unnamed.jpg"
+                                                     alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                                        <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                        <div class="icon_overlay"></div>
+                                        <div class="halim-post-title-box">
+                                            <div class="halim-post-title ">
+                                                <p class="entry-title">Đại Thánh Vô Song</p>
+                                                <p class="original_title">Monkey King: The One And Only</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="thumb grid-item post-38498">
+                                <div class="halim-item">
+                                    <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                                        <figure><img class="lazy img-responsive"
+                                                     src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-w860_-tiHFI/YO7DW5hwmNI/AAAAAAAAJqg/yFXRsVIh70oslGUKU4Fg3NxipcmCiPt3ACLcBGAsYHQ/s320/unnamed.jpg"
+                                                     alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                                        <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                        <div class="icon_overlay"></div>
+                                        <div class="halim-post-title-box">
+                                            <div class="halim-post-title ">
+                                                <p class="entry-title">Đại Thánh Vô Song</p>
+                                                <p class="original_title">Monkey King: The One And Only</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="thumb grid-item post-38498">
+                                <div class="halim-item">
+                                    <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                                        <figure><img class="lazy img-responsive"
+                                                     src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-w860_-tiHFI/YO7DW5hwmNI/AAAAAAAAJqg/yFXRsVIh70oslGUKU4Fg3NxipcmCiPt3ACLcBGAsYHQ/s320/unnamed.jpg"
+                                                     alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                                        <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                        <div class="icon_overlay"></div>
+                                        <div class="halim-post-title-box">
+                                            <div class="halim-post-title ">
+                                                <p class="entry-title">Đại Thánh Vô Song</p>
+                                                <p class="original_title">Monkey King: The One And Only</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="thumb grid-item post-38498">
+                                <div class="halim-item">
+                                    <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                                        <figure><img class="lazy img-responsive"
+                                                     src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-w860_-tiHFI/YO7DW5hwmNI/AAAAAAAAJqg/yFXRsVIh70oslGUKU4Fg3NxipcmCiPt3ACLcBGAsYHQ/s320/unnamed.jpg"
+                                                     alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                                        <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                        <div class="icon_overlay"></div>
+                                        <div class="halim-post-title-box">
+                                            <div class="halim-post-title ">
+                                                <p class="entry-title">Đại Thánh Vô Song</p>
+                                                <p class="original_title">Monkey King: The One And Only</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="thumb grid-item post-38498">
+                                <div class="halim-item">
+                                    <a class="halim-thumb" href="chitiet.php" title="Đại Thánh Vô Song">
+                                        <figure><img class="lazy img-responsive"
+                                                     src="https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&gadget=a&no_expand=1&refresh=604800&url=https://1.bp.blogspot.com/-w860_-tiHFI/YO7DW5hwmNI/AAAAAAAAJqg/yFXRsVIh70oslGUKU4Fg3NxipcmCiPt3ACLcBGAsYHQ/s320/unnamed.jpg"
+                                                     alt="Đại Thánh Vô Song" title="Đại Thánh Vô Song"></figure>
+                                        <span class="status">HD</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                        <div class="icon_overlay"></div>
+                                        <div class="halim-post-title-box">
+                                            <div class="halim-post-title ">
+                                                <p class="entry-title">Đại Thánh Vô Song</p>
+                                                <p class="original_title">Monkey King: The One And Only</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+
+                        </div>
+                        <script>
+                            jQuery(document).ready(function ($) {
+                                var owl = $('#halim_related_movies-2');
+                                owl.owlCarousel({
+                                    loop: true,
+                                    margin: 4,
+                                    autoplay: true,
+                                    autoplayTimeout: 4000,
+                                    autoplayHoverPause: true,
+                                    nav: true,
+                                    navText: ['<i class="hl-down-open rotate-left"></i>', '<i class="hl-down-open rotate-right"></i>'],
+                                    responsiveClass: true,
+                                    responsive: {
+                                        0: {
+                                            items: 2
+                                        },
+                                        480: {
+                                            items: 3
+                                        },
+                                        600: {
+                                            items: 4
+                                        },
+                                        1000: {
+                                            items: 4
+                                        }
+                                    }
+                                })
+                            });
+                        </script>
+                    </div>
+                </section>
+            </main>
+            <aside id="sidebar" class="col-xs-12 col-sm-12 col-md-4"></aside>
+        </div>
+    </div>
+
 @endsection

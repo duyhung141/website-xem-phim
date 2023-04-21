@@ -47,4 +47,7 @@ class User extends Authenticatable
         return $this->hasOne(ExtraInfo::class);
     }
 
+    public function isAdmin(){
+        return $this->is_admin == '1';
+    }
 }

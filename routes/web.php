@@ -15,10 +15,6 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/dashboard', function () {
     return view('user.index');
 })->middleware(['auth'])->name('dashboard');
