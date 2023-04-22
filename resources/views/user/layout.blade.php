@@ -61,7 +61,8 @@
             <div class="col-md-5 col-sm-6 halim-search-form hidden-xs">
                 <div class="header-nav">
                     <div class="col-xs-12">
-                        <form id="search-form-pc" name="halimForm" role="search" action="" method="GET">
+                        <form id="search-form-pc" name="halimForm" role="search" method="POST">
+                            @csrf
                             <div class="form-group">
                                 <div class="input-group col-xs-12">
                                     <input id="search" type="text" name="s" class="form-control"
@@ -70,10 +71,11 @@
                                 </div>
                             </div>
                         </form>
+                        <ul class="ui-autocomplete ajax-results">
+                            <div id="search-results">
+                                <h1>Kết quả tìm kiếm</h1>
 
-                        <ul class="ui-autocomplete ajax-results hidden">
-                            @section('search')
-                            @show
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -341,12 +343,12 @@
         z-index: 9
     }
 
-    * html .float-ck /* IE6 position fixed Bottom */
-    {
-        position: absolute;
-        bottom: auto;
-        to: expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
-    }
+    /** html .float-ck !* IE6 position fixed Bottom *!*/
+    /*{*/
+    /*    position: absolute;*/
+    /*    bottom: auto;*/
+    /*    to: expression(eval (document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));*/
+    /*}*/
 
     #hide_float_left a {
         background: #0098D2;
@@ -385,15 +387,35 @@
 <script type='text/javascript'
         src={{asset('user/js/halimtheme-core.min.js?ver=1626273138')}} id='halim-init-js'></script>
 <script>
-    $(document).ready(function () {
-        $("#search").on("keyup", function () {
-            var value = $(this).val();
+    // $(document).ready(function () {
+    //     $("#search").on("keyup", function () {
+    //         var value = $(this).val();
+    //         $.ajax({
+    //             type: "GET",
+    //             url: "search",
+    //             data: {s: value},
+    //             success: function (data) {
+    //                 $("#search-results").html(data);
+    //             }
+    //         });
+    //     });
+    // });
+
+    $(document).ready(function() {
+        $("#search-form-pc").on("submit", function(e) {
+            e.preventDefault(); // ngăn chặn chuyển hướng đến trang khác khi submit form
+            var formData = $(this).serialize(); // lấy dữ liệu từ form
             $.ajax({
-                type: "GET",
-                url: "'search'",
-                data: {s: value},
-                success: function (data) {
-                    $("#search-results").html(data);
+                type: "POST",
+                url: "{{ route('user.doSearch') }}",
+                data: formData,
+                success: function(data) {
+                    // $('.ajax-results').display('block');
+                    $("#search-results").html(data); // hiển thị kết quả trả về
+                },
+                error: function(error) {
+                    console.log(error);
+
                 }
             });
         });

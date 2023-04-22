@@ -19,16 +19,18 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('restaurant/{id}', function ($id) {
-    return response()->json(
-        [
-            'is_shutdown' => true,
-            'r_description' => "This is a test 200",
-            'r_id' => $id,
-            'r_title' => "Test 20000",
-        ]
-    );
-});
+//Route::get('restaurant/{id}', function ($id) {
+//    return response()->json(
+//        [
+//            'is_shutdown' => true,
+//            'r_description' => "This is a test 200",
+//            'r_id' => $id,
+//            'r_title' => "Test 20000",
+//        ]
+//    );
+//});
+
+Route::get('/test-search',[\App\Http\Controllers\HomeController::class,'doSearch']);
 
 Route::get('admin/user', function () {
     return response()->json(

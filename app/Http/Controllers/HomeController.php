@@ -4,40 +4,84 @@ namespace App\Http\Controllers;
 
 use App\Models\Film;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
-    public function layout(){
+    public function layout()
+    {
         $categories = \App\Models\Category::all();
         $countries = \App\Models\Country::all();
-        return view('user.layout',compact('categories','countries'));
+        return view('user.layout', compact('categories', 'countries'));
     }
 
-    public function index(){
+    public function index()
+    {
         $categories = \App\Models\Category::all();
         $countries = \App\Models\Country::all();
-        return view('user.index',compact('categories','countries'));
+        return view('user.index', compact('categories', 'countries'));
     }
 
-    public function movieDetails(){
+    public function movieDetails()
+    {
         return view('user.movie-details');
     }
 
-    public function moviesOption(){
+    public function moviesOption()
+    {
         return view("user.movies-option");
     }
 
-    public function playMovie(){
+    public function playMovie()
+    {
         return view("user.play-movie");
     }
 
-    public function search(Request $request){
-        $searchTerm = $request->input('s');
+//    public function search(Request $request){
+//        $searchTerm = $request->input('s');
+//
+//        $films = Film::where('name', 'LIKE', "%$searchTerm%")
+//            ->orWhere('description', 'LIKE', "%$searchTerm%")
+//            ->get();
+//
+//        return view('user.search', compact('films'));
+//    }
 
-        $films = Film::where('name', 'LIKE', "%$searchTerm%")
-            ->orWhere('description', 'LIKE', "%$searchTerm%")
-            ->get();
+    public function search(Request $request)
+    {
+//        $films = Film::all();
+        $films = DB::table('films')->where('name', 'LIKE', '%' . $request->s . '%')->get();
 
         return view('user.search', compact('films'));
+    }
+
+//    public function doSearch(Request $request)
+//    {
+//        $output = '';
+//        $films = DB::table('films')->where('name', 'LIKE', '%' . $request->s . '%')->get();
+////        return response()->json($films);
+//        if ($films) {
+//            foreach ($films as $key => $film) {
+//                $output .= '<tr>
+//                    <td>' . $film->name . '</td>
+//                    </tr>';
+//            }
+//        }
+////            return Response($output);
+//        return view('user.layout', compact('output'));
+//
+//    }
+
+    public function doSearch(Request $request)
+    {
+        $output = '';
+        $films = DB::table('films')->where('name', 'LIKE', '%' . $request->s . '%')->get();
+        if ($films) {
+            foreach ($films as $key => $film) {
+                $output .= '<li>' . $film->name . '</li>';
+            }
+        }
+        return response($output);
+//        return response()->json(['data' => $output]);
     }
 }

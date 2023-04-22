@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +18,9 @@ Route::prefix('/')->group(function(){
     Route::get('/play-movie', [\App\Http\Controllers\HomeController::class,'playMovie'])->name("user.play-movie");
 
     Route::get('/search', [\App\Http\Controllers\HomeController::class,'search'])->name("user.search");
+
+    Route::post('/do-search', [\App\Http\Controllers\HomeController::class,'doSearch'])->name("user.doSearch");
+
 });
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
