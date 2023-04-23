@@ -84,4 +84,18 @@ class HomeController extends Controller
         return response($output);
 //        return response()->json(['data' => $output]);
     }
+    public function test(Request $request)
+    {
+        $request ->validate([
+            's'=>'required|min:3',
+        ]);
+
+//        $films = Film::all();
+        $films = DB::table('films')->where('name', 'like', "%{$request->s}%")->get();
+//        dd($films);
+        if(empty($films[0]->name) && empty($request->s)){
+            return response()->json(['success'=>'false']);
+        }
+        return response()->json($films);
+    }
 }

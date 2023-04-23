@@ -55,25 +55,24 @@
     <div class="container">
         <div class="row" id="headwrap">
             <div class="col-md-3 col-sm-6 slogan">
-                <p class="site-title"><a class="logo" href="" title="phim hay ">Phim Hay</p>
-                </a>
+                <p class="site-title"><a class="logo" href="" title="phim hay ">Phim Hay
+                    </a></p>
             </div>
             <div class="col-md-5 col-sm-6 halim-search-form hidden-xs">
                 <div class="header-nav">
                     <div class="col-xs-12">
-                        <form id="search-form-pc" name="halimForm" role="search" method="POST">
-                            @csrf
+                        <form id="search-form-pc" name="halimForm" role="search">
+                            {{--                            @csrf--}}
                             <div class="form-group">
                                 <div class="input-group col-xs-12">
                                     <input id="search" type="text" name="s" class="form-control"
-                                           placeholder="Tìm kiếm..." autocomplete="on" required>
+                                           placeholder="Tìm kiếm..." autocomplete="off" required>
                                     <i class="animate-spin hl-spin4 hidden"></i>
                                 </div>
                             </div>
                         </form>
-                        <ul class="ui-autocomplete ajax-results">
+                        <ul class="ui-autocomplete ">
                             <div id="search-results">
-                                <h1>Kết quả tìm kiếm</h1>
 
                             </div>
                         </ul>
@@ -319,6 +318,9 @@
         z-index: 999;
     }
 
+    .hidden{
+        display: none;
+    }
     @media only screen and (max-width: 768px) {
         #overlay_pc .overlay_pc_content .overlay_pc_wrapper {
             width: 400px;
@@ -380,45 +382,45 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-
 <script type='text/javascript' src={{asset('user/js/bootstrap.min.js?ver=5.7.2')}} id='bootstrap-js'></script>
 <script type='text/javascript' src={{asset('user/js/owl.carousel.min.js?ver=5.7.2')}} id='carousel-js'></script>
 
 <script type='text/javascript'
         src={{asset('user/js/halimtheme-core.min.js?ver=1626273138')}} id='halim-init-js'></script>
 <script>
-    // $(document).ready(function () {
-    //     $("#search").on("keyup", function () {
-    //         var value = $(this).val();
-    //         $.ajax({
-    //             type: "GET",
-    //             url: "search",
-    //             data: {s: value},
-    //             success: function (data) {
-    //                 $("#search-results").html(data);
-    //             }
-    //         });
-    //     });
-    // });
-
-    $(document).ready(function() {
-        $("#search-form-pc").on("submit", function(e) {
+    $(document).ready(function () {
+        $("#search-form-pc").keyup(function (e) {
             e.preventDefault(); // ngăn chặn chuyển hướng đến trang khác khi submit form
-            var formData = $(this).serialize(); // lấy dữ liệu từ form
+            var formData = $('#search').val(); // lấy dữ liệu từ form
             $.ajax({
-                type: "POST",
-                url: "{{ route('user.doSearch') }}",
-                data: formData,
-                success: function(data) {
-                    // $('.ajax-results').display('block');
-                    $("#search-results").html(data); // hiển thị kết quả trả về
+                type: "GET",
+                {{--url: "{{ route('user.doSearch') }}",--}}
+                url: 'http://127.0.0.1:8000/api/test',
+                data: {s: formData},
+                success: function (data) {
+                    const nameList = data?.map(function (item) {
+                        return `<li>${item.name}</li>`;
+                    }).join('');
+                    $("#search-results").html(`
+                            <h1>Kết quả tìm kiếm</h1>
+                <ul class="name-list ">
+                    ${nameList}
+                 </ul>
+`)
                 },
-                error: function(error) {
+                error: function (error) {
                     console.log(error);
-
                 }
             });
         });
+
+    });
+    $('body').on('click', function(e) {
+        // Nếu click vào nơi ngoài vùng chứa kết quả
+        if (!$(e.target).closest('#search-results').length) {
+            // Ẩn kết quả render bằng cách xóa nội dung của thẻ có id là "search-results"
+            $('#search-results').html('')
+        }
     });
 </script>
 

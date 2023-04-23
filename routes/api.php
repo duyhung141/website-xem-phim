@@ -68,3 +68,5 @@ Route::get('admin/user', function () {
         ]
     );
 });
+
+Route::get('/test', [\App\Http\Controllers\HomeController::class, 'test']);

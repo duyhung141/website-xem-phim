@@ -19,7 +19,7 @@ Route::prefix('/')->group(function(){
 
     Route::get('/search', [\App\Http\Controllers\HomeController::class,'search'])->name("user.search");
 
-    Route::post('/do-search', [\App\Http\Controllers\HomeController::class,'doSearch'])->name("user.doSearch");
+//    Route::post('/do-search', [\App\Http\Controllers\HomeController::class,'doSearch'])->name("user.doSearch");
 
 });
 
