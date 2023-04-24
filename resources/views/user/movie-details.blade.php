@@ -145,8 +145,10 @@
                                 </div>
                                 <div class="bg-light p-2">
 
-                                        <textarea class="form-control ml-1 shadow-none textarea" style = "margin: 20px 0px;"></textarea></div>
-                                    <div class="mt-2 text-right" style = "margin-bottom: 10px;"><button class="btn btn-primary btn-sm shadow-none" type="button">Post comment</button><button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
+                                        <input class="form-control ml-1 shadow-none textarea" name = "content" style = "margin: 20px 0px;"></input></div>
+                                    <div class="mt-2 text-right" style = "margin-bottom: 10px;">
+                                        <button class="btn btn-primary btn-sm shadow-none" type="submit">Post comment</button>
+                                        <button class="btn btn-outline-primary btn-sm ml-1 shadow-none" type="button">Cancel</button></div>
                                 </div>
                             </div>
                         </div>

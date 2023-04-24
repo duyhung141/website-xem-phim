@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
@@ -19,7 +20,10 @@ Route::prefix('/')->group(function(){
     Route::get('/search', [\App\Http\Controllers\HomeController::class,'search'])->name("user.search");
 
 //    Route::post('/do-search', [\App\Http\Controllers\HomeController::class,'doSearch'])->name("user.doSearch");
+    Route::get("push_comment",[CommentController::class,"store"])->name("commentPush");
+    Route::get("create_cpmment",[CommentController::class,"create"])->name("commentCreate");
 
 });
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+
