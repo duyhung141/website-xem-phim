@@ -16,7 +16,7 @@ class FilmController extends Controller
     public function list()
     {
         // TODO: Implement list() method.
-        $list = Film::all();
+        $list = Film::paginate(5);
         return view('admin.film.list', compact('list'));
     }
 
@@ -33,20 +33,18 @@ class FilmController extends Controller
 
     public function doCreate()
     {
-        // TODO: Implement doAdd() method.
-        //muốn không set ảnh lên db thì cú pháp như thế nào
         try {
             if (\request()->hasFile('image')) {
                 $image = \request()->File('image');
                 $image->storeAs('image',$image->getClientOriginalName(),'public');
             }
             $data = \request()->all();
+            $data['image'] = $image->getClientOriginalName();
             Film::create($data);
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', $exception->getMessage());
         }
         return redirect()->back()->with('success', 'Thêm mới thành công');
-//        return response()->json('success', 'Thêm mới thành công');;
     }
 
     public function edit($id)

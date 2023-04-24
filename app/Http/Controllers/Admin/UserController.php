@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function list(){
-        $list = User::all();
+        $list = User::paginate(5);
         return view('admin.user.list',compact('list'));
     }
 

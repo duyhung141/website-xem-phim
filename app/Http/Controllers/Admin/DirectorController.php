@@ -11,7 +11,7 @@ class DirectorController extends Controller
     public function list()
     {
         // TODO: Implement list() method.
-        $list = Director::all();
+        $list = Director::paginate(5);
         return view('admin.director.list', compact('list'));
     }
 

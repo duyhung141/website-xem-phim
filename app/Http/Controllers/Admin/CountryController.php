@@ -11,7 +11,7 @@ class CountryController extends Controller
     public function list()
     {
         // TODO: Implement list() method.
-        $list = Country::all();
+        $list = Country::paginate(5);
         return view('admin.country.list', compact('list'));
     }
 

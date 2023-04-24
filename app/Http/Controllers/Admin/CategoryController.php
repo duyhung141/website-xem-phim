@@ -11,7 +11,7 @@ class CategoryController extends Controller
     public function list()
     {
         // TODO: Implement list() method.
-        $list = Category::all();
+        $list = Category::paginate(5);
         return view('admin.category.list', compact('list'));
     }
 
