@@ -72,7 +72,7 @@
                             </div>
                         </form>
                         <ul class="ui-autocomplete ">
-                            <div id="search-results">
+                            <div id="search-results" class="">
 
                             </div>
                         </ul>
@@ -318,8 +318,11 @@
         z-index: 999;
     }
 
-    .hidden{
-        display: none;
+    #search-results{
+        position: absolute;
+        z-index: 999;
+        width:100%;
+        background-color: #1b2d3c;
     }
     @media only screen and (max-width: 768px) {
         #overlay_pc .overlay_pc_content .overlay_pc_wrapper {
@@ -402,8 +405,8 @@
                         return `<li>${item.name}</li>`;
                     }).join('');
                     $("#search-results").html(`
-                            <h1>Kết quả tìm kiếm</h1>
-                <ul class="name-list ">
+                            <h3>Kết quả tìm kiếm</h3>
+                <ul class="name-list">
                     ${nameList}
                  </ul>
 `)

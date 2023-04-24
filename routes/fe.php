@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 
-
 Route::prefix('/')->group(function(){
     Route::get('/', [\App\Http\Controllers\HomeController::class,'index'])->name('user.index');
 

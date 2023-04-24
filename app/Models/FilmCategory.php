@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Director extends Model
+class FilmCategory extends Model
 {
     use HasFactory;
-    protected $fillable=['name'];
-
-    public function films(){
-        return $this->belongsTo(User::class);
-    }
 }

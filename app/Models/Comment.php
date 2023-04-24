@@ -12,5 +12,7 @@ class Comment extends Model
         'film_id',
         'content',
     ];
-
+    public function users(){
+        return $this->belongsTo(User::class);
+    }
 }
