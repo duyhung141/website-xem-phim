@@ -1,9 +1,9 @@
-Lỗi:    Paginate
-        Admin
-        FilmActor
 Chưa xong:  breadcumb
             comments
             views
+            FilmActor
+            FilmCategory
+            User_comment
 (thêm phim yêu thích)
 
 
