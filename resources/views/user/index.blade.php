@@ -127,29 +127,158 @@
                         </a>
                     </div>
                     <div id="halim-advanced-widget-2-ajax-box" class="halim_box">
-                        <?php $films = \App\Models\Film::all(); ?>   
-                        @foreach($films as $film)
                         <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
                             <div class="halim-item">
                                 <a class="halim-thumb" href={{route('user.movie-details')}}>
                                     <figure><img class="lazy img-responsive"
-                                        src="{{asset("storage/image/".$film->image)}}"
-                                        alt="{{$film->name}}"
-                                                 title="{{$film->name}}"></figure>
-                                  <span class="episode"><i class="fa fa-play"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
                                                                                                aria-hidden="true"></i>Vietsub</span>
                                     <div class="icon_overlay"></div>
                                     <div class="halim-post-title-box">
                                         <div class="halim-post-title ">
-                                            <p class="entry-title">{{$film->name}}</p>
-                                            
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </article>
-                        @endforeach
-                        
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="col-md-3 col-sm-3 col-xs-6 thumb grid-item post-37606">
+                            <div class="halim-item">
+                                <a class="halim-thumb" href={{route('user.movie-details')}}>
+                                    <figure><img class="lazy img-responsive"
+                                                 src="https://fptninhbinh.vn/wp-content/uploads/2021/06/bo-gia.jpg"
+                                                 alt="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"
+                                                 title="BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO"></figure>
+                                    <span class="status">TẬP 15</span><span class="episode"><i class="fa fa-play"
+                                                                                               aria-hidden="true"></i>Vietsub</span>
+                                    <div class="icon_overlay"></div>
+                                    <div class="halim-post-title-box">
+                                        <div class="halim-post-title ">
+                                            <p class="entry-title">BẠN CÙNG PHÒNG CỦA TÔI LÀ GUMIHO</p>
+                                            <p class="original_title">My Roommate Is a Gumiho</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
 
 
                     </div>
@@ -184,18 +313,16 @@
                         <div role="tabpanel" class="tab-pane active halim-ajax-popular-post">
                             <div class="halim-ajax-popular-post-loading hidden"></div>
                             <div id="halim-ajax-popular-post" class="popular-post">
-                                <?php $films = \App\Models\Film::all(); ?>   
-                            @foreach($films as $film)
                                 <div class="item post-37176">
-                                    <a href={{route('user.movie-details')}} title="{{$film->name}}">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
                                         <div class="item-link">
                                             <img
-                                                src="{{asset("storage/image/".$film->image)}}"
-                                                class="lazy post-thumb" alt="{{$film->name}}"
-                                                title="{{$film->name}}"/>
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
                                             <span class="is_trailer">Trailer</span>
                                         </div>
-                                        <p class="title">{{$film->name}}</p>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
                                     </a>
                                     <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
                                     <div style="float: left;">
@@ -205,8 +332,120 @@
                                  </span>
                                     </div>
                                 </div>
-                                @endforeach
-                                
+                                <div class="item post-37176">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
+                                <div class="item post-37176">
+                                    <a href={{route('user.movie-details')}} title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ">
+                                        <div class="item-link">
+                                            <img
+                                                src="https://ghienphim.org/uploads/GPax0JpZbqvIVyfkmDwhRCKATNtLloFQ.jpeg?v=1624801798"
+                                                class="lazy post-thumb" alt="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"
+                                                title="CHỊ MƯỜI BA: BA NGÀY SINH TỬ"/>
+                                            <span class="is_trailer">Trailer</span>
+                                        </div>
+                                        <p class="title">CHỊ MƯỜI BA: BA NGÀY SINH TỬ</p>
+                                    </a>
+                                    <div class="viewsCount" style="color: #9d9d9d;">3.2K lượt xem</div>
+                                    <div style="float: left;">
+                                 <span class="user-rate-image post-large-rate stars-large-vang"
+                                       style="display: block;/* width: 100%; */">
+                                 <span style="width: 0%"></span>
+                                 </span>
+                                    </div>
+                                </div>
 
 
                             </div>
