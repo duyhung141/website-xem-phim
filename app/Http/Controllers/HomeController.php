@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
+
+    public function showFilm(){
+        $films = Film::all();
+        return view("user.index",compact("films"));
+    }
+    
     public function layout()
     {
         $categories = \App\Models\Category::all();
